@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/InterVariable.woff2') format('woff2'),
+       url('/fonts/Inter/InterVariable.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/InterVariable-Italic.woff2') format('woff2'),
+       url('/fonts/Inter/InterVariable-Italic.woff') format('woff');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --hero-background: #0F3C5D;
+
+  --home-overlay-bg: #0A2A40;
+  --home-text-clr: #E3E4E2;
+  --home-accent-clr: #FFD166;
+
+  --overlay-bg: #EFF3F6;
+  --text-clr: #120E08;
+  --accent-clr: #178AB0;
+
+  --font-inter: Inter;
+}
+
+@theme {
+  /* Screen Margin */
+  --spacing-mobile-scr-mg-x: calc(var(--spacing) * (.25 * 20));
+  --spacing-mobile-scr-mg-y: calc(var(--spacing) * (.25 * 20));
+  --spacing-scr-mg-x: calc(var(--spacing) * (.25 * 80));
+  --spacing-scr-mg-y: calc(var(--spacing) * (.25 * 40));
+
+  /* Mobile Sidebar */
+  --spacing-sb-item-pad: calc(var(--spacing) * (.25 * 30));
+  --text-sb-item-size: 24px;
+
+  /* Homepage Sections */
+  --color-hero-bg: var(--hero-background);
+
+  /* Homepage Defaults */
+  --color-home-nav-bg: var(--home-overlay-bg);
+  --color-home-logo-clr: var(--home-text-clr);
+  --color-home-txt: var(--home-text-clr);
+  --color-home-accent: var(--home-accent-clr);
+
+  /* Normal Defaults */
+  --color-nav-bg: var(--overlay-bg);
+  --color-logo-clr: var(--text-clr);
+  --color-txt: var(--text-clr);
+  --color-accent: var(--accent-clr);
+
+  --font-sans: var(--font-inter);
+
+  --animate-slide-in-right: slide-in-right 0.3s ease-out forwards;
+  --animate-slide-out-right: slide-out-right 0.3s ease-in forwards;
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

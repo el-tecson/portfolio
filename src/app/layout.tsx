@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-})
-
 export const metadata: Metadata = {
-  title: "E.L. Tecson",
+  title: "E.L. Tecson — Web Developer | Emmanuel Leu Tecson",
   description: "I build fast, reliable web applications that solve real problems.",
 };
 
@@ -20,7 +14,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      className="font-sans h-full antialiased uppercase tracking-wider"
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
