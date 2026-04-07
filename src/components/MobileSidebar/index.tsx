@@ -13,14 +13,14 @@ export default function MobileSidebar() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <SideBarIcon className={`
-          w-12 h-12
-          ${ isHome ?
-            "fill-home-txt text-home-txt" :
-            "fill-txt text-txt"
-          }
-          sm:hidden
-        `} />
+        <div className="flex items-center justify-center sm:hidden cursor-pointer">
+          <SideBarIcon
+            className={`
+              w-12 h-12
+              ${isHome ? "fill-home-txt text-home-txt" : "fill-txt text-txt"}
+            `}
+          />
+        </div>
       </SheetTrigger>
 
       <SheetContent

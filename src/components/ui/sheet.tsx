@@ -75,11 +75,12 @@ function SheetContent({
         {showCloseButton && (
           <SheetPrimitive.Close data-slot="sheet-close" asChild>
             <div className="absolute top-mobile-scr-mg-y right-mobile-scr-mg-x">
-              <XIcon className={
-                isHome ?
+              <XIcon className={`
+                cursor-pointer
+                ${ isHome ?
                 "text-home-txt fill-home-txt" :
                 "text-txt fill-txt"
-              } height="48" width="48" />
+              }`} height="48" width="48" />
               <span className="sr-only">Close</span>
             </div>
           </SheetPrimitive.Close>
