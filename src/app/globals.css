@@ -25,6 +25,7 @@
   --home-text-clr: #E3E4E2;
   --home-accent-clr: #FFD166;
 
+  --background: #E3E4E2;
   --overlay-bg: #EFF3F6;
   --text-clr: #120E08;
   --accent-clr: #178AB0;
@@ -53,6 +54,7 @@
   --color-home-accent: var(--home-accent-clr);
 
   /* Normal Defaults */
+  --color-bg: var(--background);
   --color-nav-bg: var(--overlay-bg);
   --color-logo-clr: var(--text-clr);
   --color-txt: var(--text-clr);

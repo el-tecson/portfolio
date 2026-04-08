@@ -2,10 +2,8 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 justify-center bg-hero-bg">
+    <div className="flex flex-col flex-1 justify-center">
       <Navbar />
-      <section id="hero" className="min-h-screen bg-hero-bg">Hero Section</section>
-      <section id="about" className="min-h-screen bg-hero-bg">About Section</section>
     </div>
   );
 }
