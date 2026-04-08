@@ -16,8 +16,14 @@ interface ListItemProps extends StandardProps {
     watchPath: string;
 }
 
+interface ButtonProps extends Omit<StandardProps, "children"> {
+    text: string;
+    href: string;
+}
+
 export type {
     LinkProps,
     StandardProps,
     ListItemProps,
+    ButtonProps,
 }

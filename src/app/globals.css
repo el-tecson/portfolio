@@ -32,7 +32,7 @@
   --text-clr: #120E08;
   --accent-clr: #178AB0;
 
-  --font-inter: Inter;
+  --font-inter: Inter, sans-serif;
 }
 
 @theme {
@@ -69,22 +69,22 @@
 
   --animate-slide-in-right: slide-in-right 0.3s ease-out forwards;
   --animate-slide-out-right: slide-out-right 0.3s ease-in forwards;
+}
 
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-  @keyframes slide-out-right {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
