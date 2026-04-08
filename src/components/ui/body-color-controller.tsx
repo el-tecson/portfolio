@@ -10,11 +10,11 @@ export default function BodyColorController() {
     const body = document.body;
 
     if (pathname === "/") {
-      body.classList.add("bg-hero-bg");
+      body.classList.add("bg-hero-section");
       body.classList.remove("bg-bg");
     } else {
       body.classList.add("bg-bg");
-      body.classList.remove("bg-hero-bg");
+      body.classList.remove("bg-hero-section");
     }
   }, [pathname]);
 

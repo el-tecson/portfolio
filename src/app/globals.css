@@ -20,6 +20,7 @@
 
 :root {
   --hero-background: #0F3C5D;
+  --about-background: linear-gradient(-45deg, #178AB0, #1C81C9);
 
   --home-overlay-bg: #0A2A40;
   --home-text-clr: #E3E4E2;
@@ -45,7 +46,8 @@
   --text-sb-item-size: 24px;
 
   /* Homepage Sections */
-  --color-hero-bg: var(--hero-background);
+  --color-hero-section: var(--hero-background);
+  --color-about-section: var(--about-background);
 
   /* Homepage Defaults */
   --color-home-nav-bg: var(--home-overlay-bg);
