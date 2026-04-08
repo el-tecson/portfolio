@@ -25,6 +25,7 @@
   --home-overlay-bg: #0A2A40;
   --home-text-clr: #E3E4E2;
   --home-accent-clr: #FFD166;
+  --home-accent-darker-clr: #FFC233;
 
   --background: #E3E4E2;
   --overlay-bg: #EFF3F6;
@@ -43,6 +44,7 @@
 
   /* Mobile Sidebar */
   --spacing-sb-item-pad: calc(var(--spacing) * (.25 * 30));
+  --spacing-mobile-sidebar-icon: calc(var(--spacing-mobile-scr-mg-y) + 8px);
   --text-sb-item-size: 24px;
 
   /* Homepage Sections */
@@ -54,6 +56,7 @@
   --color-home-logo-clr: var(--home-text-clr);
   --color-home-txt: var(--home-text-clr);
   --color-home-accent: var(--home-accent-clr);
+  --color-home-accent-darker: var(--home-accent-darker-clr);
 
   /* Normal Defaults */
   --color-bg: var(--background);

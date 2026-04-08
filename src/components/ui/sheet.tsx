@@ -74,7 +74,11 @@ function SheetContent({
         {children}
         {showCloseButton && (
           <SheetPrimitive.Close data-slot="sheet-close" asChild>
-            <div className="absolute top-mobile-scr-mg-y right-mobile-scr-mg-x">
+            <div className="
+              absolute top-mobile-sidebar-icon right-mobile-scr-mg-x
+              transition-transform duration-200
+              hover:transform-[scale(1.05)]
+            ">
               <XIcon className={`
                 cursor-pointer
                 ${ isHome ?

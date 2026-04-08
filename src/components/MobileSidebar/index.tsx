@@ -13,7 +13,11 @@ export default function MobileSidebar() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <div className="flex items-center justify-center sm:hidden cursor-pointer">
+        <div className="
+          flex items-center justify-center sm:hidden cursor-pointer
+          transition-transform duration-200
+          hover:transform-[scale(1.05)]
+        ">
           <SideBarIcon
             className={`
               w-12 h-12
