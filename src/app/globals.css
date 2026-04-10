@@ -20,7 +20,8 @@
 
 :root {
   --hero-background: #0F3C5D;
-  --about-background: linear-gradient(-45deg, #178AB0, #1C81C9);
+  --about-bgclr-1: #178AB0;
+  --about-bgclr-2: #1C81C9;
 
   --home-overlay-bg: #0A2A40;
   --home-text-clr: #E3E4E2;
@@ -40,7 +41,7 @@
   --spacing-mobile-scr-mg-x: calc(var(--spacing) * (.25 * 20));
   --spacing-mobile-scr-mg-y: calc(var(--spacing) * (.25 * 20));
   --spacing-scr-mg-x: calc(var(--spacing) * (.25 * 80));
-  --spacing-scr-mg-y: calc(var(--spacing) * (.25 * 40));
+  --spacing-scr-mg-y: calc(var(--spacing) * (.25 * 20));
 
   /* Mobile Sidebar */
   --spacing-sb-item-pad: calc(var(--spacing) * (.25 * 30));
@@ -49,7 +50,8 @@
 
   /* Homepage Sections */
   --color-hero-section: var(--hero-background);
-  --color-about-section: var(--about-background);
+  --color-about-clr1: var(--about-bgclr-1);
+  --color-about-clr2: var(--about-bgclr-2);
 
   /* Homepage Defaults */
   --color-home-nav-bg: var(--home-overlay-bg);
