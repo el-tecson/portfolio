@@ -12,10 +12,11 @@ export default function CTAButton({
             <button
                 className={`
                     bg-home-accent text-txt rounded-sm
-                    transition-transform duration-200
+                    transition duration-200
                     hover:bg-home-accent-darker
                     hover:transform-[translateY(2px)]
                     cursor-pointer p-2.5 sm:p-3.75
+                    flex flex-row
                     ${className}
                 `}
                 {...props}

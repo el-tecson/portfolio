@@ -12,9 +12,11 @@ export default function SubCTAButton({
             <button
                 className={`
                     border border-home-txt text-txt rounded-sm
-                    transition-transform duration-200
+                    transition duration-200
                     hover:transform-[translateY(2px)]
+                    hover:opacity-80
                     cursor-pointer p-2 sm:p-3
+                    flex flex-row
                     ${className}
                 `}
                 {...props}
