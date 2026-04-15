@@ -31,7 +31,8 @@ export default function MobileSidebar() {
         side="right"
         className={`
             min-w-screen min-h-screen sm:hidden
-            ${ isHome ? "bg-home-nav-bg" : "bg-nav-bg" }
+            ${ isHome ? "bg-home-nav-bg/90" : "bg-nav-bg/90" }
+            backdrop-blur
             data-[state=open]:animate-slide-in-right
             data-[state=closed]:animate-slide-out-right
         `}
