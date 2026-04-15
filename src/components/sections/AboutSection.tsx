@@ -5,7 +5,7 @@ export default function AboutSection() {
     return (
         <section id="about" className="
             bg-gradient-to-br from-about-clr1 to-about-clr2 min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
-            flex flex-col justify-center box-border gap-8 sm:pt-[50px]
+            flex flex-col justify-center box-border gap-8 sm:pt-[50px] items-start
         ">
             <div className="flex flex-col gap-10 sm:gap-12">
                 <p className="text-2xl sm:text-3xl font-bold text-home-txt">
@@ -23,7 +23,7 @@ export default function AboutSection() {
                     Learn more about me.
                 </p>
             </Link>
-            <CTAButton className="justify-self-center" text="View Resume" href="#resume" />
+            <CTAButton className="self-center" text="View Resume" href="#resume" />
         </section>
     )
 }

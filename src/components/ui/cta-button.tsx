@@ -8,7 +8,7 @@ export default function CTAButton({
     ...props
 }: ButtonProps) {
     return (
-        <Link href={href}>
+        <Link href={href} className={className}>
             <button
                 className={`
                     bg-home-accent text-txt rounded-sm
@@ -17,7 +17,6 @@ export default function CTAButton({
                     hover:transform-[translateY(2px)]
                     cursor-pointer p-2.5 sm:p-3.75
                     flex flex-row
-                    ${className}
                 `}
                 {...props}
             >
