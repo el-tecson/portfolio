@@ -19,6 +19,7 @@ interface ListItemProps extends StandardProps {
 interface ButtonProps extends Omit<StandardProps, "children"> {
     text: string;
     href: string;
+    align?: "auto" | "start" | "end" | "end-safe" | "center" | "stretch" | "baseline" | "baseline-last";
 }
 
 export type {

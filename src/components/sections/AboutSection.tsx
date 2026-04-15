@@ -23,7 +23,7 @@ export default function AboutSection() {
                     Learn more about me.
                 </p>
             </Link>
-            <CTAButton className="self-center" text="View Resume" href="#resume" />
+            <CTAButton align="center" text="View Resume" href="#resume" />
         </section>
     )
 }

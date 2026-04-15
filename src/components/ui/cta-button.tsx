@@ -5,10 +5,11 @@ export default function CTAButton({
     className = "",
     text,
     href,
+    align,
     ...props
 }: ButtonProps) {
     return (
-        <Link href={href} className={className}>
+        <Link href={href} className={align ? "self-" + align : ""}>
             <button
                 className={`
                     bg-home-accent text-txt rounded-sm

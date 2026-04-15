@@ -5,10 +5,11 @@ export default function SubCTAButton({
     className = "",
     text,
     href,
+    align,
     ...props
 }: ButtonProps) {
     return (
-        <Link href={href}>
+        <Link href={href} className={align ? "self-" + align : ""}>
             <button
                 className={`
                     border border-home-txt text-txt rounded-sm
