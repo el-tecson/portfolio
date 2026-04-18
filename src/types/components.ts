@@ -19,7 +19,11 @@ interface ListItemProps extends StandardProps {
 interface ButtonProps extends Omit<StandardProps, "children"> {
     text: string;
     href: string;
-    align?: "auto" | "start" | "end" | "end-safe" | "center" | "stretch" | "baseline" | "baseline-last";
+    align?: "start" | "end" | "center" | "stretch";
+}
+
+interface ProjectCardProps extends Omit<StandardProps, "children"> {
+    projectId: number;
 }
 
 export type {
@@ -27,4 +31,5 @@ export type {
     StandardProps,
     ListItemProps,
     ButtonProps,
+    ProjectCardProps,
 }

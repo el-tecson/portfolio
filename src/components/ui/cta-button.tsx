@@ -8,8 +8,15 @@ export default function CTAButton({
     align,
     ...props
 }: ButtonProps) {
+    const alignClasses = {
+        start: "self-start",
+        center: "self-center",
+        end: "self-end",
+        stretch: "self-stretch",
+    };
+
     return (
-        <Link href={href} className={align ? "self-" + align : ""}>
+        <Link href={href} className={align ? alignClasses[align] : ""}>
             <button
                 className={`
                     bg-home-accent text-txt rounded-sm
