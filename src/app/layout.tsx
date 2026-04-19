@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import LayoutWrapper from "@/components/ui/layout-wrapper";
 import BodyColorController from "@/components/ui/body-color-controller";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const metadata: Metadata = {
   title: "E.L. Tecson — Web Developer | Emmanuel Leu Tecson",

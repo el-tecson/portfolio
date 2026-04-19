@@ -27,6 +27,10 @@
   --home-text-clr: #E3E4E2;
   --home-accent-clr: #FFD166;
   --home-accent-darker-clr: #FFC233;
+  --home-completed-clr: #00FEE5;
+  --home-planned-clr: #CCCCCC;
+  --home-in-progress-clr: #FFB914;
+  --home-review-clr: #0DFF00;
 
   --background: #E3E4E2;
   --overlay-bg: #EFF3F6;
@@ -59,6 +63,11 @@
   --color-home-txt: var(--home-text-clr);
   --color-home-accent: var(--home-accent-clr);
   --color-home-accent-darker: var(--home-accent-darker-clr);
+  --color-home-overlay: var(--home-overlay-bg);
+  --color-home-completed: var(--home-completed-clr);
+  --color-home-planned: var(--home-planned-clr);
+  --color-home-in-progress: var(--home-in-progress-clr);
+  --color-home-review: var(--home-review-clr);
 
   /* Normal Defaults */
   --color-bg: var(--background);
