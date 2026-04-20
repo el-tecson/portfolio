@@ -29,7 +29,7 @@ export default function CTAButton({
                 `}
                 {...props}
             >
-                <p className="text-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+                <p className="text-txt text-2xl sm:text-4xl font-sans uppercase font-bold">
                     {text}
                 </p>
             </button>
