@@ -34,13 +34,13 @@ export default function ProgressStatus({
     }
 
     return (
-        <div className="flex flex-row items-center gap-1" {...props}>
+        <div className="flex flex-row items-center gap-1 sm:gap-1.5" {...props}>
             <div className={`
-                w-[20px] h-[20px] rounded-2xl
+                w-[20px] h-[20px] rounded-2xl sm:w-[30px] sm:h-[30px]
                 ${isHome ? variants[variant]["home"] : variants[variant]["normal"]}
             `}/>
             <p className={`
-                text-xs font-normal
+                text-xs font-normal sm:text-lg
                 ${isHome ? variants[variant]["home-txt"] : variants[variant]["normal-txt"]}
             `}>
                 {variant}

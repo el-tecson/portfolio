@@ -30,16 +30,17 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
     return (
         <>
             <div className={`
-                flex flex-col py-7.5 px-3.75
-                gap-5 rounded-sm cursor-pointer
-                ${isHome ? "bg-home-overlay text-home-txt" : "bg-overlay text-txt"}
+                flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 sm:rounded-lg
+                gap-5 rounded-sm cursor-pointer sm:max-w-[500px] sm:gap-7.5
+                ${isHome ? "bg-home-overlay text-home-txt hover:bg-home-overlay/90" : "bg-overlay text-txt hover:bg-overlay/90"}
+                hover:transform-[scale(1.01)_translateY(2px)] transition duration-200
             `} key={projectName} onClick={() => router.push(`/projects/${projectName}`)}>
-                <p className="font-medium text-lg">
+                <p className="font-medium text-lg sm:text-[27px]">
                     {project.title}
                 </p>
                 {project.screenshots && (
                     <div
-                        className="rounded-md overflow-hidden"
+                        className="rounded-md overflow-hidden hover:transform-[scale(1.01)] transition duration-200"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <Carousel
@@ -48,6 +49,7 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                             showStatus={false}
                             showArrows={true}
                             autoPlay
+                            interval={8000}
                             onClickItem={(index) => {
                                 const imgSrc = project.screenshots?.[index];
                                 if (imgSrc) setSelectedImage(imgSrc);
@@ -64,7 +66,7 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                         </Carousel>
                     </div>
                 )}
-                <p className="font-light text-base">
+                <p className="font-light text-base sm:text-2xl">
                     {project.shortExcerpt}
                 </p>
                 <div className="flex flex-row gap-1.25">
@@ -78,12 +80,13 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                 <Link href={project.githubLink} className="self-center" target="_blank" onClick={(e) => e.stopPropagation()}>
                     <button className={`
                         flex flex-row gap-5 px-2.5 py-1.25 rounded-sm border
-                        ${isHome ? "border-home-txt" : "border-txt"} border-dashed
+                        ${isHome ? "border-home-txt" : "border-txt"} hover:opacity-90
                         justify-center items-center cursor-pointer
+                        hover:transform-[scale(1.01)_translateY(2px)] transition duration-200
                     `}>
                         <p className={`
                             text-base font-sans tracking-wider uppercase font-medium
-                            ${isHome ? "text-home-txt" : "text-txt"}
+                            ${isHome ? "text-home-txt" : "text-txt"} sm:text-2xl
                         `}>
                             View on Github
                         </p>
