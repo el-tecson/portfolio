@@ -16,7 +16,7 @@ export default function HeroSection() {
                         Full-Stack Web Developer
                     </p>
                 </div>
-                <p className="text-home-txt font-bold sm:font-semibold text-base max-w-[40ch] sm:max-w-none sm:text-2xl leading-relaxed tracking-wider">
+                <p className="text-home-txt font-bold sm:font-semibold text-base max-w-[40ch] sm:max-w-none sm:text-2xl leading-relaxed tracking-wide">
                     I build fast, reliable web applications that solve real problems.
                 </p>
             </div>
