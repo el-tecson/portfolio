@@ -13,7 +13,7 @@ export default function ProjectsSection() {
                     Some of My Works
                 </p>
             </div>
-            <div className="flex flex-col gap-25 relative sm:flex-row sm:justify-between items-start">
+            <div className="flex flex-col gap-25 lg:gap-5 xl:gap-20 relative lg:flex-row lg:justify-between lg:items-start lg:self-stretch">
                 <ProjectCard projectName="lichess-puzzle-timer" isHome={true} />
                 <ProjectCard projectName="arduino-embedded-foundations" isHome={true} />
             </div>
