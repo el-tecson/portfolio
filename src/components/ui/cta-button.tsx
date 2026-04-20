@@ -25,6 +25,7 @@ export default function CTAButton({
                     hover:transform-[translateY(2px)]
                     cursor-pointer p-2.5 sm:p-3.75
                     flex flex-row
+                    ${className}
                 `}
                 {...props}
             >
