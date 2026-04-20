@@ -66,7 +66,7 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                         </Carousel>
                     </div>
                 )}
-                <p className="font-light text-base sm:text-2xl">
+                <p className="font-light text-base sm:text-2xl normal-case">
                     {project.shortExcerpt}
                 </p>
                 <div className="flex flex-row gap-1.25">
