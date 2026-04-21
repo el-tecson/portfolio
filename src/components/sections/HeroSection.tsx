@@ -27,7 +27,7 @@ export default function HeroSection() {
                 </div>
             </section>
             {/* Bottom filler to smoothly transition to About section */}
-            <div className="bg-linear-to-b from-hero-section to-about-clr1 min-h-[10vh]"></div>
+            <div className="bg-linear-to-b from-hero-section to-about-clr1 min-h-[15vh]"></div>
         </>
     )
 }
