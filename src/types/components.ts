@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import { LinkProps as NextLinkProps } from "next/link";
+import { ProgressStates } from "./helpers";
 
 interface LinkProps extends NextLinkProps {
     children: ReactNode;
@@ -28,22 +29,9 @@ interface ProjectCardProps extends Omit<StandardProps, "children"> {
     isHome: boolean;
 }
 
-type ProgressStates = "Completed" | "Planned" | "In Progress" | "Review";
-
 interface ProgressStatusProps extends Omit<StandardProps, "children"> {
     variant: ProgressStates;
     isHome: boolean;
-}
-
-interface Project {
-    title: string;
-    shortExcerpt: string;
-    techStack: string[];
-    screenshots: string[] | null;
-    status: ProgressStates;
-    githubLink: string;
-    readmeSrc: string;
-    liveDemoLink: string | null;
 }
 
 export type {
@@ -53,5 +41,4 @@ export type {
     ButtonProps,
     ProjectCardProps,
     ProgressStatusProps,
-    Project,
 }

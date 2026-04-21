@@ -6,7 +6,7 @@ import { Babel, CPlusPlus, CSS, NodeJs, React, TypeScript, ViteJS } from "develo
 import { JSX, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import ProgressStatus from "@/components/ui/progress-status";
-import { Project } from "@/types/components";
+import { Project } from "@/types/data";
 import Link from "@/components/ui/link";
 import GithubIcon from "@/assets/github.svg";
 import { useRouter } from "next/navigation";
