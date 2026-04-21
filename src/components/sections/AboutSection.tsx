@@ -4,7 +4,7 @@ import CTAButton from "@/components/ui/cta-button";
 export default function AboutSection() {
     return (
         <section id="about" className="
-            bg-gradient-to-br from-about-clr1 to-about-clr2 min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
+            bg-linear-to-b from-about-clr1 to-about-clr2 min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
             flex flex-col justify-center box-border gap-8 sm:py-25 items-start
         ">
             <div className="flex flex-col gap-10 sm:gap-12 tracking-wide">
