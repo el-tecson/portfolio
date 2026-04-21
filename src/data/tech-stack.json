@@ -1,0 +1,23 @@
+{
+    "techStack": [
+        "React",
+        "NextJS",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "TailwindCSS",
+        "NodeJS"
+    ],
+    "database": null,
+    "toolsAndDeployment": [
+        "Git",
+        "Vite",
+        "Babel",
+        "ESLint",
+        "Prettier",
+        "Figma",
+        "VSCode",
+        "Vercel"
+    ]
+}

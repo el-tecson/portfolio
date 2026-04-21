@@ -11,6 +11,13 @@ interface Project {
     liveDemoLink: string | null;
 }
 
+type TechStackData = {
+  techStack?: string[] | null;
+  database?: string[] | null;
+  toolsAndDeployment?: string[] | null;
+}
+
 export type {
     Project,
+    TechStackData,
 }
