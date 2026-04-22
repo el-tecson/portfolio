@@ -49,7 +49,7 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                             showStatus={false}
                             showArrows={true}
                             autoPlay
-                            interval={8000}
+                            interval={6000}
                             onClickItem={(index) => {
                                 const imgSrc = project.screenshots?.[index];
                                 if (imgSrc) setSelectedImage(imgSrc);
