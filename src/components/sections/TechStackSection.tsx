@@ -57,24 +57,28 @@ export default function TechStackSection() {
     ]
 
     return (
-        <section id="tech-stack" className="
-            bg-hero-section  min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
-            flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
-        ">
-            <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-                <p className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
-                    Technologies I Use
-                </p>
-            </div>
-            <div className="flex flex-col gap-20 sm:gap-25 items-center">
-                {sections.map(section =>
-                    renderStackSection(section.title, section.data)
-                )}
-            </div>
-            <div className="flex flex-col gap-2 items-end self-end">
-                <CTAButton className="text-right" text="See these skills in action" href="/projects" />
-                <SubCTAButton text="Full skill list" href="/resume" />
-            </div>
-        </section>
+        <>
+            <section id="tech-stack" className="
+                bg-linear-to-b from-about-clr1 to-about-clr2 min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
+                flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
+            ">
+                <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
+                    <p className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+                        Technologies I Use
+                    </p>
+                </div>
+                <div className="flex flex-col gap-20 sm:gap-25 items-center">
+                    {sections.map(section =>
+                        renderStackSection(section.title, section.data)
+                    )}
+                </div>
+                <div className="flex flex-col gap-2 items-end self-end">
+                    <CTAButton className="text-right" text="See these skills in action" href="/projects" />
+                    <SubCTAButton text="Full skill list" href="/resume" />
+                </div>
+            </section>
+            {/* Bottom filler to smoothly transition to How I Work section */}
+            <div className="bg-linear-to-b from-about-clr2 to-hero-section min-h-[10vh] sm:min-h-[15vh]"></div>
+        </>
     )
 }
