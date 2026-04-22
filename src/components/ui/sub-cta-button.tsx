@@ -24,7 +24,7 @@ export default function SubCTAButton({
                     hover:transform-[translateY(2px)]
                     hover:opacity-80
                     cursor-pointer p-2 sm:p-3
-                    flex flex-row
+                    flex flex-row shadow-xs hover:shadow-sm
                     ${className}
                 `}
                 {...props}
