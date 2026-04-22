@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                 </div>
             </section>
             {/* Bottom filler to smoothly transition to Tech Stack section */}
-            <div className="bg-linear-to-b from-about-clr1 to-hero-section min-h-[15vh]"></div>
+            <div className="bg-linear-to-b from-about-clr1 to-hero-section min-h-[10vh] sm:min-h-[15vh]"></div>
         </>
     )
 }
