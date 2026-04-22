@@ -36,7 +36,7 @@ export default function TechStackSection() {
                 flex flex-col gap-5 sm:gap-7.5 items-center px-4 py-6 sm:px-8 sm:py-12
                 rounded-lg bg-hero-section/75 border border-solid
                 border-home-txt/25 shadow-sm hover:shadow-lg transition hover:transform-[scale(1.01)]
-                hover:bg-hero-section
+                hover:bg-hero-section duration-200
             ">
                 <p className="text-2xl sm:text-4xl text-home-txt font-bold">
                     {title}
