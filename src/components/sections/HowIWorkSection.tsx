@@ -13,11 +13,11 @@ export default function HowIWorkSection() {
                     How I Work
                 </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-7.5 sm:gap-2.5 items-center sm:items-stretch">
+            <div className="flex flex-col xl:flex-row gap-7.5 xl:gap-2.5 items-center xl:items-stretch">
                 <div className="
                     flex flex-col gap-[20px] px-[15px] py-[30px] bg-home-overlay
                     rounded-md border border-solid border-home-txt shadow-sm hover:shadow-md
-                    transition hover:transform-[scale(1.01)] duration-200 sm:flex-1
+                    transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 ">
                     <p className="text-center font-bold text-home-txt text-2xl">
                         Step 1 — Understand
@@ -26,11 +26,11 @@ export default function HowIWorkSection() {
                         I start by understanding the problem, the goal, and what actually needs to be built—not just what’s asked.
                     </p>
                 </div>
-                <ArrowDownIcon className="sm:rotate-[-90deg] sm:self-center" />
+                <ArrowDownIcon className="xl:rotate-[-90deg] xl:self-center" />
                 <div className="
                     flex flex-col gap-[20px] px-[15px] py-[30px] bg-home-overlay
                     rounded-md border border-solid border-home-txt shadow-sm hover:shadow-md
-                    transition hover:transform-[scale(1.01)] duration-200 sm:flex-1
+                    transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 ">
                     <p className="text-center font-bold text-home-txt text-2xl">
                         Step 2 — Design
@@ -39,11 +39,11 @@ export default function HowIWorkSection() {
                         I plan clean, simple systems and structure the solution before writing code.
                     </p>
                 </div>
-                <ArrowDownIcon className="sm:rotate-[-90deg] sm:self-center" />
+                <ArrowDownIcon className="xl:rotate-[-90deg] xl:self-center" />
                 <div className="
                     flex flex-col gap-[20px] px-[15px] py-[30px] bg-home-overlay
                     rounded-md border border-solid border-home-txt shadow-sm hover:shadow-md
-                    transition hover:transform-[scale(1.01)] duration-200 sm:flex-1
+                    transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 ">
                     <p className="text-center font-bold text-home-txt text-2xl">
                         Step 3 — Build
@@ -52,11 +52,11 @@ export default function HowIWorkSection() {
                         I develop fast, functional, and reliable features using modern web technologies.
                     </p>
                 </div>
-                <ArrowDownIcon className="sm:rotate-[-90deg] sm:self-center" />
+                <ArrowDownIcon className="xl:rotate-[-90deg] xl:self-center" />
                 <div className="
                     flex flex-col gap-[20px] px-[15px] py-[30px] bg-home-overlay
                     rounded-md border border-solid border-home-txt shadow-sm hover:shadow-md
-                    transition hover:transform-[scale(1.01)] duration-200 sm:flex-1
+                    transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 ">
                     <p className="text-center font-bold text-home-txt text-2xl">
                         Step 4 — Refine
