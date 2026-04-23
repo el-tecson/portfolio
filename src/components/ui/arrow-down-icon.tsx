@@ -1,6 +1,6 @@
 "use client"
 
-import RawArrowDownIcon from "@/assets/arrow-down1.svg";
+import RawArrowDownIcon from "@/assets/arrow-down.svg";
 import { StandardProps } from "@/types/components";
 
 export default function ArrowDownIcon({
