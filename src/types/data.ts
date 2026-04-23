@@ -11,13 +11,21 @@ interface Project {
     liveDemoLink: string | null;
 }
 
-type TechStackData = {
+interface TechStackData {
   techStack?: string[] | null;
   database?: string[] | null;
   toolsAndDeployment?: string[] | null;
 }
 
+interface CertificationsData {
+  cert_title: string;
+  cert_desc: string;
+  cert_link: string;
+  date_received: string;
+}
+
 export type {
     Project,
     TechStackData,
+    CertificationsData,
 }
