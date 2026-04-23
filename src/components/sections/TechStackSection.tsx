@@ -34,14 +34,14 @@ export default function TechStackSection() {
         return (
             <div key={title} className="
                 flex flex-col gap-5 sm:gap-7.5 items-center px-4 py-6 sm:px-8 sm:py-12
-                rounded-lg bg-hero-section/75 border border-solid
+                rounded-lg bg-home-overlay border border-solid
                 border-home-txt/25 shadow-sm hover:shadow-lg transition hover:transform-[scale(1.01)]
-                hover:bg-hero-section duration-200
+                hover:bg-home-overlay/90 duration-200
             ">
                 <h3 className="text-2xl sm:text-4xl text-home-txt font-bold">
                     {title}
                 </h3>
-                <div className="flex flex-row items-center justify-between flex-wrap gap-4 sm:gap-6">
+                <div className="flex flex-row items-center justify-center flex-wrap gap-4 sm:gap-6">
                     {items.map(item => {
                         const Icon = devIcons[item]
                         return (
@@ -72,7 +72,7 @@ export default function TechStackSection() {
                         Technologies I Use
                     </h2>
                 </div>
-                <div className="flex flex-col gap-20 sm:gap-25 items-center">
+                <div className="flex flex-col gap-20 sm:gap-25 items-stretch self-stretch">
                     {sections.map(section =>
                         renderStackSection(section.title, section.data)
                     )}
