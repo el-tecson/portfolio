@@ -57,7 +57,7 @@ export default function AchievementsSection() {
             <div className="flex flex-col gap-7.5 items-stretch self-stretch">
                 {renderCertsSection(certsData)}
             </div>
-            <div className="flex flex-col gap-2 items-start self-start">
+            <div className="flex flex-col gap-2 items-center">
                 <CTAButton className="text-right" text="View Full Experience" href="/resume" />
                 <SubCTAButton text="See My Work" href="/projects" />
             </div>
