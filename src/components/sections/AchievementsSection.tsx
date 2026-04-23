@@ -15,26 +15,26 @@ export default function AchievementsSection() {
             <>
                 {items.map((cert) => (
                     <div key={cert.cert_title} className="
-                        flex flex-col gap-[20px] px-[15px] py-[30px] bg-home-overlay
+                        flex flex-col gap-[20px] sm:gap-3 px-[15px] py-[30px] bg-home-overlay
                         rounded-lg border border-solid border-home-txt shadow-sm hover:shadow-md
                         transition hover:transform-[scale(1.01)] duration-200
                     ">
-                        <h3 className="text-center font-bold text-home-txt text-2xl">
+                        <h3 className="text-center font-bold text-home-txt text-2xl sm:text-3xl">
                             {cert.cert_title} Certificate
                         </h3>
-                        <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-2xl sm:text-left">
+                        <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-2xl sm:text-left">
                             {cert.cert_desc}
                         </p>
-                        <p className="font-normal tracking-normal text-home-txt/80 text-justify leading-relaxed normal-case text-xl sm:text-left">
+                        <p className="font-normal tracking-normal text-home-txt/80 text-justify leading-relaxed normal-case text-lg sm:text-xl sm:text-left">
                             Received on {cert.date_received}
                         </p>
                         <Link href={cert.cert_link} className="self-center sm:self-end" target="_blank">
                             <button className="
-                                flex flex-row gap-5 px-2.5 py-1.25 rounded-sm border hover:opacity-90
+                                flex flex-row gap-5 p-2 sm:p-3 rounded-sm border hover:opacity-90
                                 justify-center items-center cursor-pointer sm:px-3.75 sm:py-1.875
                                 hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200 border-home-txt
                             ">
-                                <p className="text-base font-sans tracking-wider uppercase font-medium sm:text-2xl text-home-txt">
+                                <p className="text-xl font-sans tracking-wider uppercase font-medium sm:text-2xl text-home-txt">
                                     View Certificate
                                 </p>
                             </button>
@@ -54,7 +54,7 @@ export default function AchievementsSection() {
                     Achievements
                 </h2>
             </div>
-            <div className="flex flex-col gap-7.5 items-stretch self-stretch">
+            <div className="flex flex-col gap-7.5 sm:gap-11.25 items-stretch self-stretch">
                 {renderCertsSection(certsData)}
             </div>
             <div className="flex flex-col gap-2 items-center">
