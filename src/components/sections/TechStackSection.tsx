@@ -38,9 +38,9 @@ export default function TechStackSection() {
                 border-home-txt/25 shadow-sm hover:shadow-lg transition hover:transform-[scale(1.01)]
                 hover:bg-hero-section duration-200
             ">
-                <p className="text-2xl sm:text-4xl text-home-txt font-bold">
+                <h3 className="text-2xl sm:text-4xl text-home-txt font-bold">
                     {title}
-                </p>
+                </h3>
                 <div className="flex flex-row items-center justify-between flex-wrap gap-4 sm:gap-6">
                     {items.map(item => {
                         const Icon = devIcons[item]
@@ -68,9 +68,9 @@ export default function TechStackSection() {
                 flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
             ">
                 <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-                    <p className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+                    <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
                         Technologies I Use
-                    </p>
+                    </h2>
                 </div>
                 <div className="flex flex-col gap-20 sm:gap-25 items-center">
                     {sections.map(section =>

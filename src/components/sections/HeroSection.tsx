@@ -10,9 +10,9 @@ export default function HeroSection() {
             ">
                 <div className="flex flex-col gap-5 sm:gap-7.5">
                     <div className="flex flex-col">
-                        <p className="text-home-txt font-bold text-5xl max-w-[12ch] sm:max-w-none sm:text-7xl leading-tight tracking-wider">
+                        <h1 className="text-home-txt font-bold text-5xl max-w-[12ch] sm:max-w-none sm:text-7xl leading-tight tracking-wider">
                             Emmanuel Leu Tecson
-                        </p>
+                        </h1>
                         <p className="text-home-accent font-bold text-2xl max-w-[25ch] sm:max-w-none sm:text-4xl leading-snug tracking-wider">
                             Full-Stack Web Developer
                         </p>

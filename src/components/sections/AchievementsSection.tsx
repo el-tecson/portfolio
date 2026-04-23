@@ -50,9 +50,9 @@ export default function AchievementsSection() {
             flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
         ">
             <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-                <p className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+                <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
                     Achievements
-                </p>
+                </h2>
             </div>
             <div className="flex flex-col gap-7.5 items-stretch self-stretch">
                 {renderCertsSection(certsData)}

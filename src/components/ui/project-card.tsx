@@ -35,9 +35,9 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                 ${isHome ? "bg-home-overlay text-home-txt hover:bg-home-overlay/90" : "bg-overlay text-txt hover:bg-overlay/90"}
                 hover:transform-[scale(1.01)_translateY(2px)] transition duration-200
             `} key={projectName} onClick={() => router.push(`/projects/${projectName}`)}>
-                <p className="font-medium text-lg sm:text-[27px]">
+                <h3 className="font-medium text-lg sm:text-[27px]">
                     {project.title}
-                </p>
+                </h3>
                 {project.screenshots && (
                     <div
                         className="rounded-md overflow-hidden hover:transform-[scale(1.01)] transition duration-200"

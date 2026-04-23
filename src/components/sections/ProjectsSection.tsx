@@ -9,9 +9,9 @@ export default function ProjectsSection() {
             flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
         ">
             <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-                <p className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+                <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
                     Some of My Works
-                </p>
+                </h2>
             </div>
             <div className="flex flex-col gap-25 lg:gap-5 xl:gap-20 relative lg:flex-row lg:justify-between lg:items-start lg:self-stretch">
                 <ProjectCard projectName="lichess-puzzle-timer" isHome={true} />
