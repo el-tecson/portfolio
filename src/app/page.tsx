@@ -3,6 +3,7 @@ import AchievementsSection from "@/components/sections/AchievementsSection";
 import HeroSection from "@/components/sections/HeroSection";
 import HowIWorkSection from "@/components/sections/HowIWorkSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import ResumeSection from "@/components/sections/ResumeSection";
 import TechStackSection from "@/components/sections/TechStackSection";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <TechStackSection />
       <HowIWorkSection />
       <AchievementsSection />
+      <ResumeSection />
     </div>
   );
 }

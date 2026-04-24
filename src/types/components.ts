@@ -34,6 +34,11 @@ interface ProgressStatusProps extends Omit<StandardProps, "children"> {
     isHome: boolean;
 }
 
+interface CVCardProps extends StandardProps {
+    title: string;
+    isHome: boolean;
+}
+
 export type {
     LinkProps,
     StandardProps,
@@ -41,4 +46,5 @@ export type {
     ButtonProps,
     ProjectCardProps,
     ProgressStatusProps,
+    CVCardProps,
 }
