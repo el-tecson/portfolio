@@ -6,7 +6,7 @@ export default function ResumeSection() {
     return (
         <section id="resume" className="
             bg-hero-section  min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
-            flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
+            flex flex-col justify-center items-center gap-20 sm:gap-25 py-50
         ">
             <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
                 <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
