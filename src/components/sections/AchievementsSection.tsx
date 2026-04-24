@@ -54,7 +54,7 @@ export default function AchievementsSection() {
                     Achievements
                 </h2>
             </div>
-            <div className="flex flex-col gap-7.5 sm:gap-11.25 items-stretch self-stretch">
+            <div className="flex flex-col gap-7.5 sm:gap-11.25 items-stretch max-w-[1024px]">
                 {renderCertsSection(certsData)}
             </div>
             <div className="flex flex-col gap-2 items-center">
