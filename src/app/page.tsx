@@ -1,5 +1,6 @@
 import AboutSection from "@/components/sections/AboutSection";
 import AchievementsSection from "@/components/sections/AchievementsSection";
+import CTASection from "@/components/sections/CTASection";
 import HeroSection from "@/components/sections/HeroSection";
 import HowIWorkSection from "@/components/sections/HowIWorkSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <HowIWorkSection />
       <AchievementsSection />
       <ResumeSection />
+      <CTASection />
     </div>
   );
 }
