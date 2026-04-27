@@ -30,8 +30,8 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
     return (
         <>
             <div className={`
-                flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 sm:rounded-lg shadow-md hover:shadow-lg
-                gap-5 rounded-sm cursor-pointer sm:max-w-[600px] sm:gap-7.5 flex-1
+                flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 shadow-md hover:shadow-lg
+                gap-5 rounded-lg cursor-pointer sm:max-w-[600px] sm:gap-7.5 flex-1
                 ${isHome ? "bg-home-overlay text-home-txt hover:bg-home-overlay/90" : "bg-overlay text-txt hover:bg-overlay/90"}
                 hover:transform-[scale(1.01)_translateY(2px)] transition duration-200
             `} key={projectName} onClick={() => router.push(`/projects/${projectName}`)}>
