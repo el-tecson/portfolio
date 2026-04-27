@@ -13,59 +13,59 @@ export default function Footer() {
                 </div>
             </Link>
             <div className="flex flex-col gap-5">
-                <p className="font-semibold text-base text-home-txt">
+                <p className="font-semibold text-base text-home-txt lg:text-lg">
                     Pages
                 </p>
                 <div className="flex flex-col gap-1">
                     <Link href="/">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Home
                         </p>
                     </Link>
                     <Link href="/projects">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Projects
                         </p>
                     </Link>
                     <Link href="/about">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             About
                         </p>
                     </Link>
                     <Link href="/contact">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Contact
                         </p>
                     </Link>
                     <Link href="/resume">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Resume
                         </p>
                     </Link>
                 </div>
             </div>
             <div className="flex flex-col gap-5">
-                <p className="font-semibold text-base text-home-txt">
+                <p className="font-semibold text-base text-home-txt lg:text-lg">
                     Socials
                 </p>
                 <div className="flex flex-col gap-1">
                     <Link href={linksData.github_link} target="_blank">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Github
                         </p>
                     </Link>
                     <Link href={linksData.facebook_link} target="_blank">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Facebook
                         </p>
                     </Link>
                     <Link href={linksData.gmail_link} target="_blank">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             Gmail
                         </p>
                     </Link>
                     <Link href={linksData.linkedin_link} target="_blank">
-                        <p className="underline text-home-txt text-base">
+                        <p className="underline text-home-txt text-base lg:text-lg">
                             LinkedIn
                         </p>
                     </Link>
