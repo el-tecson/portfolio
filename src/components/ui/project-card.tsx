@@ -33,7 +33,7 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                 flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 shadow-md hover:shadow-lg
                 gap-5 rounded-lg cursor-pointer sm:max-w-[600px] sm:gap-7.5 flex-1
                 ${isHome ? "bg-home-overlay text-home-txt hover:bg-home-overlay/90" : "bg-overlay text-txt hover:bg-overlay/90"}
-                hover:transform-[scale(1.01)_translateY(2px)] transition duration-200 min-w-[500px]
+                hover:transform-[scale(1.01)_translateY(2px)] transition duration-200 sm:min-w-[500px]
             `} key={projectName} onClick={() => router.push(`/projects/${projectName}`)}>
                 <h3 className="font-medium text-lg sm:text-[27px]">
                     {project.title}
