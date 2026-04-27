@@ -4,6 +4,7 @@ import LayoutWrapper from "@/components/ui/layout-wrapper";
 import BodyColorController from "@/components/ui/body-color-controller";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "E.L. Tecson — Web Developer | Emmanuel Leu Tecson",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <LayoutWrapper>
           <Navbar />
           {children}
+          <Footer />
         </LayoutWrapper>
         <BodyColorController />
       </body>
