@@ -36,6 +36,10 @@
   --overlay-bg: #EFF3F6;
   --text-clr: #120E08;
   --accent-clr: #178AB0;
+  --completed-clr: #170099;
+  --planned-clr: #4D4D4D;
+  --in-progress-clr: #996B00;
+  --review-clr: #089900;
 
   --font-inter: Inter, sans-serif;
 }
@@ -75,6 +79,11 @@
   --color-logo-clr: var(--text-clr);
   --color-txt: var(--text-clr);
   --color-accent: var(--accent-clr);
+  --color-overlay: var(--overlay-bg);
+  --color-completed: var(--completed-clr);
+  --color-planned: var(--planned-clr);
+  --color-in-progress: var(--in-progress-clr);
+  --color-review: var(--review-clr);
 
   --font-sans: var(--font-inter);
 
