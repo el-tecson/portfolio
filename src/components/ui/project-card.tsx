@@ -69,13 +69,15 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
                 <p className="font-light text-base sm:text-2xl normal-case tracking-normal">
                     {project.shortExcerpt}
                 </p>
-                <div className="flex flex-row gap-1.25">
-                    {project.techStack.map(tech => (
-                        <span key={tech}>
-                            {devIcons[tech]}
-                        </span>
-                    ))}
-                </div>
+                {projectsData.techStack &&
+                    <div className="flex flex-row gap-1.25">
+                        {project.techStack?.map(tech => (
+                            <span key={tech}>
+                                {devIcons[tech]}
+                            </span>
+                        ))}
+                    </div>
+                }
                 <ProgressStatus variant={project.status} isHome={isHome} />
                 <Link href={project.githubLink} className="self-center" target="_blank" onClick={(e) => e.stopPropagation()}>
                     <button className={`

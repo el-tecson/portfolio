@@ -3,7 +3,7 @@ import { ProgressStates } from "./helpers";
 interface Project {
     title: string;
     shortExcerpt: string;
-    techStack: string[];
+    techStack: string[] | null;
     screenshots: string[] | null;
     status: ProgressStates;
     githubLink: string;

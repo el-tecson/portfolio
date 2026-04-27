@@ -29,5 +29,15 @@
         "githubLink": "https://github.com/eltecson/arduino-embedded-foundations#readme",
         "readmeSrc": "/projects/arduino-embedded-foundations/README.md",
         "liveDemoLink": null
+    },
+    "blog-core": {
+        "title": "Blog Core (Demo Blog App)",
+        "screenshots": null,
+        "shortExcerpt": "A full-stack blog application featuring post creation, editing, deletion, and dynamic rendering — built as a demo project to explore modern web development workflows.",
+        "techStack": null,
+        "status": "Planned",
+        "githubLink": "https://github.com/eltecson/blog-core#readme",
+        "readmeSrc": "/projects/blog-core/README.md",
+        "liveDemoLink": null
     }
 }
