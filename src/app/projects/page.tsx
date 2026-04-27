@@ -1,6 +1,7 @@
 export default function Projects() {
   return (
-    <div className="flex flex-col flex-1 justify-center bg-bg">
-    </div>
+    <main className="flex flex-col flex-1 justify-center bg-bg">
+
+    </main>
   );
 }

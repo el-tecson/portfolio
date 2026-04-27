@@ -9,7 +9,7 @@ import TechStackSection from "@/components/sections/TechStackSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 justify-center">
+    <main className="flex flex-col flex-1 justify-center">
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
@@ -18,6 +18,6 @@ export default function Home() {
       <AchievementsSection />
       <ResumeSection />
       <CTASection />
-    </div>
+    </main>
   );
 }
