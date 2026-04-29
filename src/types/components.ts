@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import { LinkProps as NextLinkProps } from "next/link";
 import { ProgressStates } from "./helpers";
+import { Project } from "./data";
 
 interface LinkProps extends NextLinkProps {
     children: ReactNode;
@@ -39,6 +40,20 @@ interface CVCardProps extends StandardProps {
     isHome: boolean;
 }
 
+interface ScreenshotCarouselProps extends Omit<StandardProps, "children"> {
+    projectData: Project;
+    inProjectCard?: boolean;
+}
+
+interface GithubButtonProps extends Omit<StandardProps, "children"> {
+    githubLink: string;
+    isHome?: boolean;
+}
+
+interface RouterDivProps extends StandardProps {
+    pushTo: string;
+}
+
 export type {
     LinkProps,
     StandardProps,
@@ -47,4 +62,7 @@ export type {
     ProjectCardProps,
     ProgressStatusProps,
     CVCardProps,
+    ScreenshotCarouselProps,
+    GithubButtonProps,
+    RouterDivProps,
 }
