@@ -16,7 +16,9 @@
         "status": "Completed",
         "githubLink": "https://github.com/eltecson/lichess-puzzle-timer#readme",
         "readmeSrc": "/projects/lichess-puzzle-timer/README.md",
-        "liveDemoLink": "https://chromewebstore.google.com/detail/ifloeapglolidlgbfjnfidpnpnobddof?utm_source=item-share-cb"
+        "liveDemoLink": null,
+        "extensionLink": "https://chromewebstore.google.com/detail/ifloeapglolidlgbfjnfidpnpnobddof?utm_source=item-share-cb",
+        "firefoxAddonLink": "https://addons.mozilla.org/en-US/firefox/addon/lichess-puzzle-timer/"
     },
     "arduino-embedded-foundations": {
         "title": "Arduino Embedded Systems Foundations (10 Micro-Projects)",
@@ -28,7 +30,9 @@
         "status": "Completed",
         "githubLink": "https://github.com/eltecson/arduino-embedded-foundations#readme",
         "readmeSrc": "/projects/arduino-embedded-foundations/README.md",
-        "liveDemoLink": null
+        "liveDemoLink": null,
+        "extensionLink": null,
+        "firefoxAddonLink": null
     },
     "blog-core": {
         "title": "Blog Core (Demo Blog App)",
@@ -38,6 +42,8 @@
         "status": "Planned",
         "githubLink": "https://github.com/eltecson/blog-core#readme",
         "readmeSrc": "/projects/blog-core/README.md",
-        "liveDemoLink": null
+        "liveDemoLink": null,
+        "extensionLink": null,
+        "firefoxAddonLink": null
     }
 }

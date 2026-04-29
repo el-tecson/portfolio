@@ -9,6 +9,8 @@ interface Project {
     githubLink: string;
     readmeSrc: string;
     liveDemoLink: string | null;
+    extensionLink: string | null;
+    firefoxAddonLink: string | null;
 }
 
 interface TechStackData {

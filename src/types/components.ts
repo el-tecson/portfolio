@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ComponentType, ReactNode, SVGProps } from "react"
 import { LinkProps as NextLinkProps } from "next/link";
 import { ProgressStates } from "./helpers";
 import { Project } from "./data";
@@ -54,6 +54,12 @@ interface RouterDivProps extends StandardProps {
     pushTo: string;
 }
 
+interface CustomButtonProps extends Omit<StandardProps, "children"> {
+    buttonText: string;
+    buttonLink: string;
+    ButtonIcon: ComponentType<SVGProps<SVGSVGElement>>;
+}
+
 export type {
     LinkProps,
     StandardProps,
@@ -65,4 +71,5 @@ export type {
     ScreenshotCarouselProps,
     GithubButtonProps,
     RouterDivProps,
+    CustomButtonProps,
 }
