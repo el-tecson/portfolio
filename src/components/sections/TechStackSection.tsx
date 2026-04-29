@@ -38,7 +38,7 @@ export default function TechStackSection() {
                 border-home-txt/25 shadow-sm hover:shadow-lg transition hover:transform-[scale(1.01)]
                 hover:bg-home-overlay/90 duration-200
             ">
-                <h3 className="text-2xl sm:text-4xl text-home-txt font-bold">
+                <h3 className="text-2xl sm:text-4xl text-home-txt font-bold text-center">
                     {title}
                 </h3>
                 <div className="flex flex-row items-center justify-center flex-wrap gap-4 sm:gap-6">
