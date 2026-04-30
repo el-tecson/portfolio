@@ -2,6 +2,7 @@
 
 import { ScreenshotCarouselProps } from "@/types/components";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Carousel } from "react-responsive-carousel";
 
 export default function ScreenshotCarousel({
@@ -41,17 +42,23 @@ export default function ScreenshotCarousel({
                     </Carousel>
                 </div>
             )}
-            {selectedImage && (
-                <div
-                    className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
-                    onClick={() => setSelectedImage(null)}
-                >
-                    <img
-                        src={selectedImage}
-                        className="max-w-[100vw] max-h-[100vh] rounded-sm shadow-lg cursor-zoom-out"
-                    />
-                </div>
-            )}
+            {selectedImage && 
+                createPortal(
+                    <div
+                        className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedImage(null)
+                        }}
+                    >
+                        <img
+                            src={selectedImage}
+                            className="max-w-[100vw] max-h-[100vh] rounded-sm shadow-lg cursor-zoom-out"
+                        />
+                    </div>,
+                    document.body
+                )
+            }
         </>
     )
 }
