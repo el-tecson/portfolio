@@ -60,6 +60,10 @@ interface CustomButtonProps extends Omit<StandardProps, "children"> {
     ButtonIcon: ComponentType<SVGProps<SVGSVGElement>>;
 }
 
+interface AccentTextProps extends StandardProps {
+    fading?: boolean;
+}
+
 export type {
     LinkProps,
     StandardProps,
@@ -72,4 +76,5 @@ export type {
     GithubButtonProps,
     RouterDivProps,
     CustomButtonProps,
+    AccentTextProps,
 }
