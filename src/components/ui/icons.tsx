@@ -7,6 +7,7 @@ import RawChromeWebStoreIcon from "@/assets/chromewebstore.svg";
 import RawFirefoxIcon from "@/assets/firefox.svg";
 import RawLiveDemoIcon from "@/assets/live-demo.svg";
 import RawSourceCodeIcon from "@/assets/source-code.svg";
+import RawSendIcon from "@/assets/send.svg";
 import { StandardProps } from "@/types/components";
 
 export function Logo({
@@ -56,4 +57,11 @@ export function SourceCodeIcon({
     ...props
 }: Omit<StandardProps, "children">) {
     return <RawSourceCodeIcon className={className} {...props} />
+}
+
+export function SendIcon({
+    className,
+    ...props
+}: Omit<StandardProps, "children">) {
+    return <RawSendIcon className={className} {...props} />
 }

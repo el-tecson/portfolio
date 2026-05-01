@@ -1,4 +1,4 @@
-import { ComponentType, ReactNode, SVGProps } from "react"
+import { ComponentProps, ComponentType, ReactNode, SVGProps } from "react"
 import { LinkProps as NextLinkProps } from "next/link";
 import { ProgressStates } from "./helpers";
 import { Project } from "./data";
@@ -64,6 +64,19 @@ interface AccentTextProps extends StandardProps {
     fading?: boolean;
 }
 
+interface BaseFieldProps {
+  label: string;
+  name: string;
+}
+
+interface InputProps
+  extends BaseFieldProps,
+    Omit<ComponentProps<"input">, "name"> {}
+
+interface TextareaProps
+  extends BaseFieldProps,
+    Omit<ComponentProps<"textarea">, "name"> {}
+
 export type {
     LinkProps,
     StandardProps,
@@ -77,4 +90,6 @@ export type {
     RouterDivProps,
     CustomButtonProps,
     AccentTextProps,
+    InputProps,
+    TextareaProps,
 }
