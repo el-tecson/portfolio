@@ -1,5 +1,5 @@
 interface ProjectRouteProps {
-  params: { projectName: string }
+  params: Promise<{ projectName: string }>;
 }
 
 export type { ProjectRouteProps }
