@@ -3,6 +3,7 @@ import "./globals.css";
 import LayoutWrapper from "@/components/ui/layout-wrapper";
 import BodyColorController from "@/components/ui/body-color-controller";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'animate.css/animate.min.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 

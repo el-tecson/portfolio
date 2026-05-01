@@ -57,7 +57,7 @@ export default function ContactForm() {
                             <SelectTrigger className="w-full border-txt px-[10px] py-[11px] text-sm bg-overlay border-1 rounded-[5px] w-[210px] placeholder:text-black/25 font-inherit">
                                 <SelectValue placeholder="Select a subject" />
                             </SelectTrigger>
-                            <SelectContent className="bg-overlay">
+                            <SelectContent className="animate__animated animate__fadeIn bg-overlay rounded-[5px]" style={{ animationDuration: "200ms" }}>
                                 <SelectGroup>
                                     <SelectLabel>Subjects</SelectLabel>
                                     <SelectItem value="Project Inquiry">
