@@ -1,4 +1,5 @@
 ## Emmanuel Leu Tecson
+
 **emmanuel.l.tecson@gmail.com | Jose Dalman, Zamboanga del Norte**
 
 ## Summary
@@ -12,27 +13,29 @@ solutions.
 ## Technical Projects
 
 ### Lichess Puzzle Timer — By Eltecson
+
 **Extension Project (Chrome, Firefox, Firefox for Android) | 10/2025 - Present**
 
 - Developed a browser extension that enhances Lichess puzzle training with real-time timers and automated puzzle flow
 - Implemented multiple timing modes (per-puzzle and cumulative) with customizable presets for different training speeds
 - Integrated performance tracking to measure solving speed, accuracy, and training consistency
 - Deployed and maintained cross-browser support on Google Chrome, Mozilla Firefox, and Firefox for Android, ensuring
-consistent functionality across desktop and mobile environments
+  consistent functionality across desktop and mobile environments
 - Designed a lightweight, privacy-focused system with no external accounts or data tracking
 
 ### Arduino Embedded Foundations (10 Micro-Projects)
+
 **Embedded Systems Project Series | 01/2026 - 04/2026**
 
 - Developed a structured series of 10 Arduino-based micro-projects to explore core embedded systems concepts, including
-digital I/O, timing, and sensor integration
+  digital I/O, timing, and sensor integration
 - Built and tested hardware-software systems demonstrating real-time interaction between micro-controllers and external
-components (LEDs, sensors, and input devices)
+  components (LEDs, sensors, and input devices)
 - Applied iterative debugging and circuit validation to ensure reliable behavior across multiple prototypes
 - Strengthened understanding of low-level programming, hardware interfacing, and event-driven logic in resource-
-constrained environments
+  constrained environments
 - Documented project implementations and learning progression in a public GitHub repository to support reproducibility and
-continuous improvement
+  continuous improvement
 
 ## Skills
 
@@ -41,6 +44,7 @@ Programming, Graphic Design, Web Design
 ## Education
 
 ### Manawan National High School | Jose Dalman, Zamboanga del Norte
+
 **CSS Strand | 03/2026**
 
 - Graduated with High Honors

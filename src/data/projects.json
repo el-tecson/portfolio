@@ -1,49 +1,44 @@
 {
-    "lichess-puzzle-timer": {
-        "title": "Lichess Puzzle Timer Browser Extension",
-        "screenshots": [
-            "/projects/lichess-puzzle-timer/screenshots/1.png",
-            "/projects/lichess-puzzle-timer/screenshots/2.png",
-            "/projects/lichess-puzzle-timer/screenshots/3.png",
-            "/projects/lichess-puzzle-timer/screenshots/4.png",
-            "/projects/lichess-puzzle-timer/screenshots/5.png"
-        ],
-        "shortExcerpt": "A browser extension that implements a timer to puzzles in lichess. Works on both Chrome and Firefox (and Firefox for Android).",
-        "techStack": [
-            "React", "NodeJS", "Typescript",
-            "CSS", "Vite", "Babel"
-        ],
-        "status": "Completed",
-        "githubLink": "https://github.com/eltecson/lichess-puzzle-timer#readme",
-        "readmeSrc": "/projects/lichess-puzzle-timer/README.md",
-        "liveDemoLink": null,
-        "extensionLink": "https://chromewebstore.google.com/detail/ifloeapglolidlgbfjnfidpnpnobddof?utm_source=item-share-cb",
-        "firefoxAddonLink": "https://addons.mozilla.org/en-US/firefox/addon/lichess-puzzle-timer/"
-    },
-    "arduino-embedded-foundations": {
-        "title": "Arduino Embedded Systems Foundations (10 Micro-Projects)",
-        "screenshots": null,
-        "shortExcerpt": "A structured set of 10 Arduino micro-projects designed to build strong fundamentals in embedded systems, focusing on logic, state machines, and sensor handling rather than simple step-by-step tutorials.",
-        "techStack": [
-            "C++"
-        ],
-        "status": "Completed",
-        "githubLink": "https://github.com/eltecson/arduino-embedded-foundations#readme",
-        "readmeSrc": "/projects/arduino-embedded-foundations/README.md",
-        "liveDemoLink": null,
-        "extensionLink": null,
-        "firefoxAddonLink": null
-    },
-    "blog-core": {
-        "title": "Blog Core (Demo Blog App)",
-        "screenshots": null,
-        "shortExcerpt": "A full-stack blog application featuring post creation, editing, deletion, and dynamic rendering — built as a demo project to explore modern web development workflows.",
-        "techStack": null,
-        "status": "Planned",
-        "githubLink": "https://github.com/eltecson/blog-core#readme",
-        "readmeSrc": "/projects/blog-core/README.md",
-        "liveDemoLink": null,
-        "extensionLink": null,
-        "firefoxAddonLink": null
-    }
+  "lichess-puzzle-timer": {
+    "title": "Lichess Puzzle Timer Browser Extension",
+    "screenshots": [
+      "/projects/lichess-puzzle-timer/screenshots/1.png",
+      "/projects/lichess-puzzle-timer/screenshots/2.png",
+      "/projects/lichess-puzzle-timer/screenshots/3.png",
+      "/projects/lichess-puzzle-timer/screenshots/4.png",
+      "/projects/lichess-puzzle-timer/screenshots/5.png"
+    ],
+    "shortExcerpt": "A browser extension that implements a timer to puzzles in lichess. Works on both Chrome and Firefox (and Firefox for Android).",
+    "techStack": ["React", "NodeJS", "Typescript", "CSS", "Vite", "Babel"],
+    "status": "Completed",
+    "githubLink": "https://github.com/eltecson/lichess-puzzle-timer#readme",
+    "readmeSrc": "/projects/lichess-puzzle-timer/README.md",
+    "liveDemoLink": null,
+    "extensionLink": "https://chromewebstore.google.com/detail/ifloeapglolidlgbfjnfidpnpnobddof?utm_source=item-share-cb",
+    "firefoxAddonLink": "https://addons.mozilla.org/en-US/firefox/addon/lichess-puzzle-timer/"
+  },
+  "arduino-embedded-foundations": {
+    "title": "Arduino Embedded Systems Foundations (10 Micro-Projects)",
+    "screenshots": null,
+    "shortExcerpt": "A structured set of 10 Arduino micro-projects designed to build strong fundamentals in embedded systems, focusing on logic, state machines, and sensor handling rather than simple step-by-step tutorials.",
+    "techStack": ["C++"],
+    "status": "Completed",
+    "githubLink": "https://github.com/eltecson/arduino-embedded-foundations#readme",
+    "readmeSrc": "/projects/arduino-embedded-foundations/README.md",
+    "liveDemoLink": null,
+    "extensionLink": null,
+    "firefoxAddonLink": null
+  },
+  "blog-core": {
+    "title": "Blog Core (Demo Blog App)",
+    "screenshots": null,
+    "shortExcerpt": "A full-stack blog application featuring post creation, editing, deletion, and dynamic rendering — built as a demo project to explore modern web development workflows.",
+    "techStack": null,
+    "status": "Planned",
+    "githubLink": "https://github.com/eltecson/blog-core#readme",
+    "readmeSrc": "/projects/blog-core/README.md",
+    "liveDemoLink": null,
+    "extensionLink": null,
+    "firefoxAddonLink": null
+  }
 }

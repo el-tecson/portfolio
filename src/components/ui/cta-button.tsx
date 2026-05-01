@@ -1,24 +1,18 @@
-import { ButtonProps } from "@/types/components";
-import Link from "./link";
+import { ButtonProps } from "@/types/components"
+import Link from "./link"
 
-export default function CTAButton({
-    className = "",
-    text,
-    href,
-    align,
-    ...props
-}: ButtonProps) {
-    const alignClasses = {
-        start: "self-start",
-        center: "self-center",
-        end: "self-end",
-        stretch: "self-stretch",
-    };
+export default function CTAButton({ className = "", text, href, align, ...props }: ButtonProps) {
+  const alignClasses = {
+    start: "self-start",
+    center: "self-center",
+    end: "self-end",
+    stretch: "self-stretch",
+  }
 
-    return (
-        <Link href={href} className={align ? alignClasses[align] : ""}>
-            <button
-                className={`
+  return (
+    <Link href={href} className={align ? alignClasses[align] : ""}>
+      <button
+        className={`
                     bg-home-accent text-txt rounded-sm
                     transition duration-200
                     hover:bg-home-accent-darker
@@ -27,12 +21,10 @@ export default function CTAButton({
                     flex flex-row shadow-sm hover:shadow-md
                     ${className}
                 `}
-                {...props}
-            >
-                <p className="text-txt text-2xl sm:text-4xl font-sans uppercase font-bold">
-                    {text}
-                </p>
-            </button>
-        </Link>
-    )
+        {...props}
+      >
+        <p className="text-txt text-2xl sm:text-4xl font-sans uppercase font-bold">{text}</p>
+      </button>
+    </Link>
+  )
 }

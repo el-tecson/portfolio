@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { usePathname } from "next/navigation"
+import { useEffect } from "react"
 
 export default function BodyColorController() {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   useEffect(() => {
-    const body = document.body;
+    const body = document.body
 
     if (pathname === "/") {
-      body.classList.add("bg-hero-section");
-      body.classList.remove("bg-bg");
+      body.classList.add("bg-hero-section")
+      body.classList.remove("bg-bg")
     } else {
-      body.classList.add("bg-bg");
-      body.classList.remove("bg-hero-section");
+      body.classList.add("bg-bg")
+      body.classList.remove("bg-hero-section")
     }
-  }, [pathname]);
+  }, [pathname])
 
-  return null;
+  return null
 }

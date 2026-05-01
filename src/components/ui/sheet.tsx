@@ -11,21 +11,15 @@ function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />
 }
 
-function SheetTrigger({
-  ...props
-}: React.ComponentProps<typeof SheetPrimitive.Trigger>) {
+function SheetTrigger({ ...props }: React.ComponentProps<typeof SheetPrimitive.Trigger>) {
   return <SheetPrimitive.Trigger data-slot="sheet-trigger" {...props} />
 }
 
-function SheetClose({
-  ...props
-}: React.ComponentProps<typeof SheetPrimitive.Close>) {
+function SheetClose({ ...props }: React.ComponentProps<typeof SheetPrimitive.Close>) {
   return <SheetPrimitive.Close data-slot="sheet-close" {...props} />
 }
 
-function SheetPortal({
-  ...props
-}: React.ComponentProps<typeof SheetPrimitive.Portal>) {
+function SheetPortal({ ...props }: React.ComponentProps<typeof SheetPrimitive.Portal>) {
   return <SheetPrimitive.Portal data-slot="sheet-portal" {...props} />
 }
 
@@ -55,9 +49,9 @@ function SheetContent({
   side?: "top" | "right" | "bottom" | "left"
   showCloseButton?: boolean
 }) {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
-  const isHome = pathname === "/";
+  const isHome = pathname === "/"
 
   return (
     <SheetPortal>
@@ -74,17 +68,20 @@ function SheetContent({
         {children}
         {showCloseButton && (
           <SheetPrimitive.Close data-slot="sheet-close" asChild>
-            <div className="
+            <div
+              className="
               absolute top-mobile-sidebar-icon right-mobile-scr-mg-x
               transition-transform duration-200
               hover:transform-[scale(1.05)]
-            ">
-              <XIcon className={`
+            "
+            >
+              <XIcon
+                className={`
                 cursor-pointer
-                ${ isHome ?
-                "text-home-txt fill-home-txt" :
-                "text-txt fill-txt"
-              }`} height="48" width="48" />
+                ${isHome ? "text-home-txt fill-home-txt" : "text-txt fill-txt"}`}
+                height="48"
+                width="48"
+              />
               <span className="sr-only">Close</span>
             </div>
           </SheetPrimitive.Close>
@@ -114,17 +111,11 @@ function SheetFooter({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
-function SheetTitle({
-  className,
-  ...props
-}: React.ComponentProps<typeof SheetPrimitive.Title>) {
+function SheetTitle({ className, ...props }: React.ComponentProps<typeof SheetPrimitive.Title>) {
   return (
     <SheetPrimitive.Title
       data-slot="sheet-title"
-      className={cn(
-        "cn-font-heading text-base font-medium text-foreground",
-        className
-      )}
+      className={cn("cn-font-heading text-base font-medium text-foreground", className)}
       {...props}
     />
   )

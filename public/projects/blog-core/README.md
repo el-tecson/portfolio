@@ -12,13 +12,13 @@ Many beginner full-stack projects focus on isolated features without demonstrati
 
 Simple tutorials often avoid important concepts such as:
 
-* Dynamic data rendering
-* Persistent storage
-* Content management workflows
-* API communication
-* Form validation
-* State synchronization
-* Structured application architecture
+- Dynamic data rendering
+- Persistent storage
+- Content management workflows
+- API communication
+- Form validation
+- State synchronization
+- Structured application architecture
 
 As a result, developers may understand individual tools but struggle to combine them into a complete, maintainable system.
 
@@ -32,53 +32,53 @@ By building a realistic CRUD-based system, the project serves as a practical env
 
 ## Planned Features
 
-* Create, edit, and delete blog posts
-* Dynamic blog post rendering
-* Individual post pages via dynamic routing
-* Responsive user interface
-* Form validation and error handling
-* Database-backed content persistence
-* Timestamp and metadata support
-* Markdown or rich-text content support
-* Modular component architecture
+- Create, edit, and delete blog posts
+- Dynamic blog post rendering
+- Individual post pages via dynamic routing
+- Responsive user interface
+- Form validation and error handling
+- Database-backed content persistence
+- Timestamp and metadata support
+- Markdown or rich-text content support
+- Modular component architecture
 
 ## Planned Tech Stack
 
-* React
-* Next.js
-* TypeScript
-* Tailwind CSS
-* Node.js
-* Database integration (TBD)
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Node.js
+- Database integration (TBD)
 
 ## Planned Software Concepts
 
-* CRUD operations
-* Server-client data flow
-* Dynamic routing
-* API integration
-* Component reusability
-* State management
-* Form handling and validation
-* Database querying and persistence
+- CRUD operations
+- Server-client data flow
+- Dynamic routing
+- API integration
+- Component reusability
+- State management
+- Form handling and validation
+- Database querying and persistence
 
 ## Expected Challenges
 
-* Designing scalable data structures
-* Synchronizing frontend and backend state
-* Managing dynamic rendering efficiently
-* Structuring reusable application components
-* Implementing reliable form validation
-* Organizing full-stack project architecture
+- Designing scalable data structures
+- Synchronizing frontend and backend state
+- Managing dynamic rendering efficiently
+- Structuring reusable application components
+- Implementing reliable form validation
+- Organizing full-stack project architecture
 
 ## Learning Goals
 
-* Strengthen full-stack development fundamentals
-* Improve understanding of application architecture
-* Practice backend integration and data handling
-* Build confidence with dynamic rendering workflows
-* Explore scalable frontend component design
-* Develop experience with modern TypeScript-based stacks
+- Strengthen full-stack development fundamentals
+- Improve understanding of application architecture
+- Practice backend integration and data handling
+- Build confidence with dynamic rendering workflows
+- Explore scalable frontend component design
+- Develop experience with modern TypeScript-based stacks
 
 ## Current Progress
 

@@ -1,20 +1,20 @@
 export default {
   plugins: [
     {
-      name: 'removeDimensions',
+      name: "removeDimensions",
       active: true,
     },
     {
-      name: 'removeAttrs',
+      name: "removeAttrs",
       params: {
-        attrs: '(fill|stroke|style)',
+        attrs: "(fill|stroke|style)",
       },
     },
     {
-      name: 'addAttributesToSVGElement',
+      name: "addAttributesToSVGElement",
       params: {
-        attributes: [{ fill: 'currentColor' }],
+        attributes: [{ fill: "currentColor" }],
       },
     },
   ],
-};
+}

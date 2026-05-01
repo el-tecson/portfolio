@@ -1,22 +1,25 @@
-"use client";
+"use client"
 
-import { Logo } from "@/components/ui/icons";
-import { usePathname } from "next/navigation";
-import AccentText from "./AccentText";
+import { Logo } from "@/components/ui/icons"
+import { usePathname } from "next/navigation"
+import AccentText from "./AccentText"
 
 export default function NavbarLogo() {
-    const pathname = usePathname();
-    const isHome = pathname === "/";
-    return (
-        <>
-            <Logo className={`
+  const pathname = usePathname()
+  const isHome = pathname === "/"
+  return (
+    <>
+      <Logo
+        className={`
                 logo
-                ${ isHome ? "fill-home-logo-clr" : "fill-logo-clr" }
+                ${isHome ? "fill-home-logo-clr" : "fill-logo-clr"}
                 w-16 h-16
-            `}/>
-            <p className={isHome ? "text-home-txt" : "text-txt"}>
-                <AccentText>E</AccentText>mmanuel <AccentText>L</AccentText>eu <AccentText>Tecson</AccentText>
-            </p>
-        </>
-    )
+            `}
+      />
+      <p className={isHome ? "text-home-txt" : "text-txt"}>
+        <AccentText>E</AccentText>mmanuel <AccentText>L</AccentText>eu{" "}
+        <AccentText>Tecson</AccentText>
+      </p>
+    </>
+  )
 }

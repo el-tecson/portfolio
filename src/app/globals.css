@@ -1,44 +1,46 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter/InterVariable.woff2') format('woff2'),
-       url('/fonts/Inter/InterVariable.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("/fonts/Inter/InterVariable.woff2") format("woff2"),
+    url("/fonts/Inter/InterVariable.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter/InterVariable-Italic.woff2') format('woff2'),
-       url('/fonts/Inter/InterVariable-Italic.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("/fonts/Inter/InterVariable-Italic.woff2") format("woff2"),
+    url("/fonts/Inter/InterVariable-Italic.woff") format("woff");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
 :root {
-  --hero-background: #0F3C5D;
-  --about-bgclr-1: #178AB0;
-  --about-bgclr-2: #1C81C9;
+  --hero-background: #0f3c5d;
+  --about-bgclr-1: #178ab0;
+  --about-bgclr-2: #1c81c9;
 
-  --home-overlay-bg: #0A2A40;
-  --home-text-clr: #E3E4E2;
-  --home-accent-clr: #FFD166;
-  --home-accent-darker-clr: #FFC233;
-  --home-completed-clr: #00FEE5;
-  --home-planned-clr: #CCCCCC;
-  --home-in-progress-clr: #FFB914;
-  --home-review-clr: #0DFF00;
+  --home-overlay-bg: #0a2a40;
+  --home-text-clr: #e3e4e2;
+  --home-accent-clr: #ffd166;
+  --home-accent-darker-clr: #ffc233;
+  --home-completed-clr: #00fee5;
+  --home-planned-clr: #cccccc;
+  --home-in-progress-clr: #ffb914;
+  --home-review-clr: #0dff00;
 
-  --background: #E3E4E2;
-  --overlay-bg: #EFF3F6;
-  --text-clr: #120E08;
-  --accent-clr: #178AB0;
+  --background: #e3e4e2;
+  --overlay-bg: #eff3f6;
+  --text-clr: #120e08;
+  --accent-clr: #178ab0;
   --completed-clr: #170099;
-  --planned-clr: #4D4D4D;
-  --in-progress-clr: #996B00;
+  --planned-clr: #4d4d4d;
+  --in-progress-clr: #996b00;
   --review-clr: #089900;
 
   --font-inter: Inter, sans-serif;
@@ -46,13 +48,13 @@
 
 @theme {
   /* Screen Margin */
-  --spacing-mobile-scr-mg-x: calc(var(--spacing) * (.25 * 20));
-  --spacing-mobile-scr-mg-y: calc(var(--spacing) * (.25 * 20));
-  --spacing-scr-mg-x: calc(var(--spacing) * (.25 * 80));
-  --spacing-scr-mg-y: calc(var(--spacing) * (.25 * 20));
+  --spacing-mobile-scr-mg-x: calc(var(--spacing) * (0.25 * 20));
+  --spacing-mobile-scr-mg-y: calc(var(--spacing) * (0.25 * 20));
+  --spacing-scr-mg-x: calc(var(--spacing) * (0.25 * 80));
+  --spacing-scr-mg-y: calc(var(--spacing) * (0.25 * 20));
 
   /* Mobile Sidebar */
-  --spacing-sb-item-pad: calc(var(--spacing) * (.25 * 30));
+  --spacing-sb-item-pad: calc(var(--spacing) * (0.25 * 30));
   --spacing-mobile-sidebar-icon: calc(var(--spacing-mobile-scr-mg-y) + 8px);
   --text-sb-item-size: 24px;
 
@@ -111,20 +113,20 @@
 }
 
 @keyframes accentFade {
-    0%,
-    92% {
-        color: var(--color-txt);
-    }
+  0%,
+  92% {
+    color: var(--color-txt);
+  }
 
-    93% {
-        color: var(--color-accent);
-    }
+  93% {
+    color: var(--color-accent);
+  }
 
-    99% {
-        color: var(--color-accent);
-    }
+  99% {
+    color: var(--color-accent);
+  }
 
-    100% {
-      color: var(--color-txt);
-    }
+  100% {
+    color: var(--color-txt);
+  }
 }

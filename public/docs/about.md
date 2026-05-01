@@ -4,19 +4,19 @@ I enjoy working on front-end development, UI implementation, and turning concept
 
 ## WHAT I WORK WITH
 
-* TypeScript
-* React
-* Next.js
-* Tailwind CSS
-* Node.js
-* Git & GitHub
+- TypeScript
+- React
+- Next.js
+- Tailwind CSS
+- Node.js
+- Git & GitHub
 
 ## CURRENTLY
 
-* Building personal projects
-* Improving my front-end and design skills
-* Learning more about scalable and maintainable code
-* Working toward becoming a professional developer
+- Building personal projects
+- Improving my front-end and design skills
+- Learning more about scalable and maintainable code
+- Working toward becoming a professional developer
 
 ## OUTSIDE OF CODING
 

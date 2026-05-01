@@ -1,7 +1,5 @@
 interface ProjectRouteProps {
-    params: { projectName: string };
+  params: { projectName: string }
 }
 
-export type {
-    ProjectRouteProps,
-}
+export type { ProjectRouteProps }

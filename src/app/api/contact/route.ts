@@ -1,30 +1,25 @@
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
-import constants from "@/data/constants.json";
+import { NextResponse } from "next/server"
+import { Resend } from "resend"
+import constants from "@/data/constants.json"
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
-    try {
-        const body = await req.json();
+  try {
+    const body = await req.json()
 
-        const {
-            subject,
-            name,
-            email,
-            message
-        } = body;
+    const { subject, name, email, message } = body
 
-        await resend.emails.send({
-            from: "Portfolio Contact <onboarding@resend.dev>",
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
 
-            to: constants.email,
+      to: constants.email,
 
-            subject: `[${subject}] Message from ${name}`,
+      subject: `[${subject}] Message from ${name}`,
 
-            replyTo: email,
+      replyTo: email,
 
-            html: `
+      html: `
                 <div>
                     <h2>New Contact Form Message</h2>
 
@@ -48,22 +43,21 @@ export async function POST(req: Request) {
                     <p>${message}</p>
                 </div>
             `,
-        });
+    })
 
-        return NextResponse.json({
-            success: true,
-        });
+    return NextResponse.json({
+      success: true,
+    })
+  } catch (err) {
+    console.error(err)
 
-    } catch (err) {
-        console.error(err);
-
-        return NextResponse.json(
-            {
-                success: false,
-            },
-            {
-                status: 500,
-            }
-        );
-    }
+    return NextResponse.json(
+      {
+        success: false,
+      },
+      {
+        status: 500,
+      }
+    )
+  }
 }

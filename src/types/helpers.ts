@@ -1,5 +1,3 @@
-type ProgressStates = "Completed" | "Planned" | "In Progress" | "Review";
+type ProgressStates = "Completed" | "Planned" | "In Progress" | "Review"
 
-export type {
-    ProgressStates,
-}
+export type { ProgressStates }

@@ -1,11 +1,6 @@
-import { TextareaProps } from "@/types/components";
+import { TextareaProps } from "@/types/components"
 
-export function Textarea({
-  className,
-  label,
-  name,
-  ...props
-}: TextareaProps) {
+export function Textarea({ className, label, name, ...props }: TextareaProps) {
   return (
     <div className="input flex flex-col w-full h-full">
       <label
