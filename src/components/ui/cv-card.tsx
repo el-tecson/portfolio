@@ -16,7 +16,7 @@ export default function CVCard({
     const router = useRouter();
     return (
         <div className={`
-            bg-home-overlay rounded-lg shadow-md hover:shadow-lg transition
+            ${isHome ? "bg-home-overlay" : "bg-overlay"} rounded-lg shadow-md hover:shadow-lg transition
             px-[15px] py-[30px] sm:px-[22.5px] sm:py-[45px] flex flex-col gap-4 cursor-pointer
             hover:transform-[scale(1.01)_translateY(-2px)] duration-200
             ${className}
@@ -24,7 +24,7 @@ export default function CVCard({
             onClick={() => router.push(`/resume`)}
             {...props}
         >
-            <h3 className="font-semibold text-home-txt text-xl sm:text-3xl">
+            <h3 className={`font-semibold ${isHome ? "text-home-txt" : "text-txt"} text-xl sm:text-3xl`}>
                 {title}
             </h3>
             {children}
