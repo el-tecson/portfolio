@@ -55,7 +55,7 @@ export default function MobileSidebar() {
           <SidebarListItem watchPath="/projects">Projects</SidebarListItem>
           <SidebarListItem watchPath="/about">About</SidebarListItem>
           <SidebarListItem watchPath="/contact">Contact</SidebarListItem>
-          <SidebarListItem watchPath="/resume">Resume</SidebarListItem>
+          <SidebarListItem watchPath="/resume" className="border-none">Resume</SidebarListItem>
         </SidebarList>
       </SheetContent>
     </Sheet>

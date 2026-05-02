@@ -17,7 +17,7 @@ export default function SidebarListItem({
     <Link href={watchPath}>
       <li
         className={`
-                    py-sb-item-pad transition-colors duration-200
+                    py-5 transition-colors duration-200
                     ${
                       isPath
                         ? isHome
@@ -28,7 +28,7 @@ export default function SidebarListItem({
                           : "text-txt hover:text-nav-bg hover:bg-txt"
                     }
                     border-b ${isHome ? "border-home-txt/50" : "border-txt/50"}
-                    text-sb-item-size font-semibold
+                    text-base font-semibold
                     ${className}
             `}
         {...props}
