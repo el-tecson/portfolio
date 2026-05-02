@@ -12,14 +12,14 @@ export default function ResumeSection() {
         "
     >
       <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-        <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+        <h2 className="text-home-txt text-xl sm:text-2xl font-sans uppercase tracking-wider font-bold">
           Resume (Preview)
         </h2>
       </div>
       <div className="flex flex-col justify-center items-center gap-20 lg:flex-row">
         <div className="flex flex-col gap-7.5 sm:gap-11.25 items-stretch self-stretch sm:flex-1">
           <CVCard isHome={true} title="Short Summary">
-            <p className="font-normal tracking-normal normal-case text-base text-home-txt text-justify leading-relaxed sm:text-2xl lg:text-left">
+            <p className="font-normal tracking-normal normal-case text-sm text-home-txt text-justify leading-relaxed sm:text-xl lg:text-left">
               Developer focused on building secure, high-performance web applications. Strong in
               algorithms, system design fundamentals, and application security principles.
               Passionate about creating software that is both scalable and resilient.

@@ -12,7 +12,7 @@ export default function HowIWorkSection() {
         "
     >
       <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-        <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+        <h2 className="text-home-txt text-xl sm:text-2xl font-sans uppercase tracking-wider font-bold">
           How I Work
         </h2>
       </div>
@@ -24,8 +24,8 @@ export default function HowIWorkSection() {
                     transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 "
         >
-          <h3 className="text-center font-bold text-home-txt text-2xl">Step 1 — Understand</h3>
-          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-2xl sm:text-left">
+          <h3 className="text-center font-bold text-home-txt text-xl">Step 1 — Understand</h3>
+          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-left">
             I start by understanding the problem, the goal, and what actually needs to be built—not
             just what’s asked.
           </p>
@@ -38,8 +38,8 @@ export default function HowIWorkSection() {
                     transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 "
         >
-          <h3 className="text-center font-bold text-home-txt text-2xl">Step 2 — Design</h3>
-          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-2xl sm:text-left">
+          <h3 className="text-center font-bold text-home-txt text-xl">Step 2 — Design</h3>
+          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-left">
             I plan clean, simple systems and structure the solution before writing code.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function HowIWorkSection() {
                     transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 "
         >
-          <h3 className="text-center font-bold text-home-txt text-2xl">Step 3 — Build</h3>
-          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-2xl sm:text-left">
+          <h3 className="text-center font-bold text-home-txt text-xl">Step 3 — Build</h3>
+          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-left">
             I develop fast, functional, and reliable features using modern web technologies.
           </p>
         </div>
@@ -64,8 +64,8 @@ export default function HowIWorkSection() {
                     transition hover:transform-[scale(1.01)] duration-200 xl:flex-1
                 "
         >
-          <h3 className="text-center font-bold text-home-txt text-2xl">Step 4 — Refine</h3>
-          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-2xl sm:text-left">
+          <h3 className="text-center font-bold text-home-txt text-xl">Step 4 — Refine</h3>
+          <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-left">
             I optimize performance, fix edge cases, and improve the small details that make
             everything feel right.
           </p>

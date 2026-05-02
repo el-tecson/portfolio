@@ -19,6 +19,7 @@
     "radix-ui": "^1.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-fast-marquee": "^1.6.5",
     "react-markdown": "^10.1.0",
     "react-responsive-carousel": "^3.2.23",
     "remark-gfm": "^4.0.1",

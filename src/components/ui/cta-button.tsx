@@ -23,7 +23,7 @@ export default function CTAButton({ className = "", text, href, align, ...props 
                 `}
         {...props}
       >
-        <p className="text-txt text-2xl sm:text-4xl font-sans uppercase font-bold">{text}</p>
+        <p className="text-txt text-xl sm:text-2xl font-sans uppercase font-bold">{text}</p>
       </button>
     </Link>
   )

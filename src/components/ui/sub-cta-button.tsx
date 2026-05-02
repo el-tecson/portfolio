@@ -23,7 +23,7 @@ export default function SubCTAButton({ className = "", text, href, align, ...pro
                 `}
         {...props}
       >
-        <p className="text-home-txt text-base sm:text-2xl font-sans uppercase tracking-wider font-normal">
+        <p className="text-home-txt text-xs sm:text-lg font-sans uppercase tracking-normal font-normal">
           {text}
         </p>
       </button>

@@ -17,7 +17,7 @@ export default function ScreenshotCarousel({
     <>
       {projectData.screenshots && (
         <div
-          className="rounded-md overflow-hidden hover:transform-[scale(1.01)] transition duration-200 cursor-pointer"
+          className="rounded-md overflow-hidden hover:transform-[scale(1.01)] transition duration-200 cursor-pointer min-w-0 w-full"
           onClick={inProjectCard ? (e) => e.stopPropagation() : undefined}
         >
           <Carousel

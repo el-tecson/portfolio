@@ -25,20 +25,22 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
     <RouterDiv
       className={`
             flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 shadow-md hover:shadow-lg
-            gap-5 rounded-2xl cursor-pointer sm:max-w-[600px] sm:gap-7.5 flex-1 select-none
+            gap-5 rounded-2xl cursor-pointer sm:gap-7.5 flex-1 select-none min-w-0 w-full
             ${isHome ? "bg-home-overlay text-home-txt hover:bg-home-overlay/90" : "bg-overlay text-txt hover:bg-overlay/90"}
-            hover:transform-[scale(1.01)_translateY(2px)] transition duration-200 sm:min-w-[500px]
+            hover:transform-[scale(1.01)_translateY(2px)] transition duration-200
         `}
       key={projectName}
       pushTo={`/projects/${projectName}`}
     >
       <h3 className="font-bold text-lg sm:text-[27px]">{project.title}</h3>
       <ScreenshotCarousel projectData={project} inProjectCard={true} />
-      <p className={`font-normal text-base sm:text-2xl normal-case tracking-normal ${isHome ? "text-home-txt/80" : "text-txt/80"}`}>
+      <p
+        className={`font-normal text-base sm:text-2xl normal-case tracking-normal ${isHome ? "text-home-txt/80" : "text-txt/80"}`}
+      >
         {project.shortExcerpt}
       </p>
       {project.techStack && (
-        <div className="flex flex-row gap-1.25">
+        <div className="flex flex-row gap-1.25 w-full min-w-0 flex-wrap">
           {project.techStack?.map((tech) => (
             <span key={tech}>{devIcons[tech]}</span>
           ))}

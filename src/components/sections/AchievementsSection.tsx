@@ -20,13 +20,13 @@ export default function AchievementsSection() {
                         transition hover:transform-[scale(1.01)] duration-200
                     "
           >
-            <h3 className="text-center font-bold text-home-txt text-2xl sm:text-3xl">
+            <h3 className="text-center font-bold text-home-txt text-xl sm:text-2xl">
               {cert.cert_title} Certificate
             </h3>
             <p className="font-normal tracking-normal text-home-txt text-justify leading-relaxed normal-case text-xl sm:text-2xl sm:text-left">
               {cert.cert_desc}
             </p>
-            <p className="font-normal tracking-normal text-home-txt/80 text-justify leading-relaxed normal-case text-lg sm:text-xl sm:text-left">
+            <p className="font-normal tracking-normal text-home-txt/80 text-justify leading-relaxed normal-case text-sm sm:text-xl sm:text-left">
               Received on {cert.date_received}
             </p>
             <Link href={cert.cert_link} className="self-center sm:self-end" target="_blank">
@@ -37,7 +37,7 @@ export default function AchievementsSection() {
                                 hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200 border-home-txt
                             "
               >
-                <p className="text-xl font-sans tracking-wider uppercase font-medium sm:text-2xl text-home-txt">
+                <p className="text-base font-sans tracking-wider uppercase font-medium sm:text-xl text-home-txt">
                   View Certificate
                 </p>
               </button>
@@ -56,7 +56,7 @@ export default function AchievementsSection() {
         "
     >
       <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-        <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+        <h2 className="text-home-txt text-xl sm:text-2xl font-sans uppercase tracking-wider font-bold">
           Achievements
         </h2>
       </div>

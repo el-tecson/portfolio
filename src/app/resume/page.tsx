@@ -22,7 +22,7 @@ export default async function Resume() {
           remarkPlugins={[remarkGfm]}
           components={{
             h3: ({ children }) => (
-              <h3 className="text-base font-normal text-txt text-xl">{children}</h3>
+              <h3 className="text-sm break-words font-normal text-txt sm:text-xl">{children}</h3>
             ),
             a: ({ children, href }) => (
               <Link

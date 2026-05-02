@@ -7,12 +7,12 @@ export default function ProjectsSection() {
     <section
       id="projects"
       className="
-            bg-linear-to-b from-about-clr2 to-about-clr1 min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
+            bg-hero-section min-h-screen px-mobile-scr-mg-x sm:px-scr-mg-x
             flex flex-col justify-center items-center gap-20 sm:gap-25 py-25
         "
     >
       <div className="border border-home-txt text-txt p-2.5 sm:p-3.75 rounded-lg">
-        <h2 className="text-home-txt text-2xl sm:text-4xl font-sans uppercase tracking-wider font-bold">
+        <h2 className="text-home-txt text-xl sm:text-2xl font-sans uppercase tracking-wider font-bold">
           Some of My Works
         </h2>
       </div>

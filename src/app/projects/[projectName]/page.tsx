@@ -29,7 +29,7 @@ export default async function ProjectPage({ params }: ProjectRouteProps) {
     <main className="flex flex-col gap-[50px] justify-start bg-bg min-h-screen px-mobile-scr-mg-x py-25 pt-35 sm:px-scr-mg-x">
       <BackButton />
       <section
-        className="px-4 py-8 rounded-2xl bg-overlay shadow-sm flex flex-col gap-4 sm:max-w-[800px] sm:gap-8 sm:px-10 sm:py-20 sm:rounded-4xl self-center"
+        className="px-4 py-8 rounded-2xl bg-overlay w-full min-w-0 shadow-sm flex flex-col gap-4 sm:max-w-[800px] sm:gap-8 sm:px-10 sm:py-20 sm:rounded-4xl self-center"
         id="project-view"
       >
         <h2 className="text-2xl font-bold text-txt sm:text-4xl">Project: {project.title}</h2>
