@@ -50,9 +50,9 @@ export default function TechStackSection() {
         key={title}
         className="
                 flex flex-col gap-5 sm:gap-7.5 items-center px-4 py-6 sm:px-8 sm:py-12
-                rounded-lg bg-home-overlay border border-solid
-                border-home-txt/25 shadow-sm hover:shadow-lg transition hover:transform-[scale(1.01)]
-                hover:bg-home-overlay/90 duration-200
+                rounded-lg bg-home-overlay border border-solid border-home-txt
+                shadow-sm hover:shadow-lg transition-transform hover:transform-[scale(1.01)]
+                duration-200
             "
       >
         <h3 className="text-xl sm:text-2xl text-home-txt font-bold text-center">{title}</h3>
