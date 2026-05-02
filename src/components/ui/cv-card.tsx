@@ -11,7 +11,7 @@ export default function CVCard({ className, children, title, isHome, ...props }:
   return (
     <div
       className={`
-            ${isHome ? "bg-home-overlay" : "bg-overlay"} rounded-lg shadow-md hover:shadow-lg transition
+            ${isHome ? "bg-home-overlay border border-solid border-home-txt" : "bg-overlay"} rounded-lg shadow-md hover:shadow-lg transition
             px-[15px] py-[30px] sm:px-[22.5px] sm:py-[45px] flex flex-col gap-4 cursor-pointer
             hover:transform-[scale(1.01)_translateY(-2px)] duration-200
             ${className}
