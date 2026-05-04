@@ -13,12 +13,20 @@ import {
   SelectGroup,
 } from "@/components/ui/select"
 import { SendIcon } from "./icons"
+import Turnstile from "react-turnstile"
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false)
+  const [token, setToken] = useState("")
 
   async function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault()
+
+    if (!token) {
+      alert("Please complete the verification")
+      setLoading(false)
+      return
+    }
 
     setLoading(true)
 
@@ -29,6 +37,8 @@ export default function ContactForm() {
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
+
+      turnstileToken: token,
     }
 
     const res = await fetch("/api/contact", {
@@ -49,19 +59,20 @@ export default function ContactForm() {
       <h2 className="text-xl text-txt font-bold mb-5">Contact Form</h2>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2"
+        className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 overflow-hidden"
       >
         <div className="flex flex-col gap-4 sm:row-span-2">
           {/* Subject */}
           <div className="flex flex-col gap-2 w-full static">
             <label
-              htmlFor="subject"
+              id="subject-label"
+              htmlFor="subject-select"
               className="text-txt text-sm font-semibold relative top-3.75 ml-[7px] px-[3px] bg-overlay w-fit"
             >
               Subject
             </label>
-            <Select name="subject" required>
-              <SelectTrigger className="w-full border-txt px-[10px] py-[11px] text-sm bg-overlay border-1 rounded-[5px] w-[210px] placeholder:text-black/25 font-inherit">
+            <Select required>
+              <SelectTrigger id="subject-select" aria-labelledby="subject-label" className="w-full border-txt px-[10px] py-[11px] text-sm bg-overlay border-1 rounded-[5px] w-[210px] placeholder:text-black/25 font-inherit">
                 <SelectValue placeholder="Select a subject" />
               </SelectTrigger>
               <SelectContent
@@ -79,11 +90,11 @@ export default function ContactForm() {
           </div>
           {/* Name */}
           <div className="flex flex-col gap-2">
-            <Input label="Name" name="name" placeholder="Your name" required />
+            <Input label="Name" name="name" placeholder="Your name" minLength={2} maxLength={100} required />
           </div>
           {/* Email */}
           <div className="flex flex-col gap-2">
-            <Input label="Email" name="email" type="email" placeholder="you@example.com" required />
+            <Input label="Email" name="email" type="email" placeholder="you@example.com" maxLength={254} required />
           </div>
         </div>
 
@@ -95,11 +106,20 @@ export default function ContactForm() {
             name="message"
             rows={6}
             placeholder="Your message..."
+            minLength={10}
+            maxLength={5000}
             required
           />
         </div>
 
-        <div className="sm:col-span-2 flex flex-row justify-end items-center h-fit">
+        <div className="sm:col-span-2 flex flex-col justify-end items-end h-fit sm:flex-row sm:justify-between sm:items-center">
+          <Turnstile
+            className="w-full min-w-0"
+            sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+            onVerify={(token) => {
+              setToken(token)
+            }}
+          />
           <button
             type="submit"
             disabled={loading}
