@@ -71,7 +71,7 @@ export default function ContactForm() {
             >
               Subject
             </label>
-            <Select required>
+            <Select name="subject" required>
               <SelectTrigger
                 id="subject-select"
                 aria-labelledby="subject-label"
