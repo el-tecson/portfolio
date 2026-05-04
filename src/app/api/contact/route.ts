@@ -44,10 +44,7 @@ export async function POST(req: Request) {
     })
 
     if (decision.isDenied()) {
-      return NextResponse.json(
-        { success: false },
-        { status: 429 }
-      )
+      return NextResponse.json({ success: false }, { status: 429 })
     }
 
     const body = await req.json()
@@ -55,29 +52,23 @@ export async function POST(req: Request) {
     const parsed = contactSchema.safeParse(body)
 
     if (!parsed.success) {
-      return NextResponse.json(
-        { success: false },
-        { status: 400 }
-      )
+      return NextResponse.json({ success: false }, { status: 400 })
     }
 
     const { subject, name, email, message, turnstileToken } = parsed.data
 
-    const verifyRes = await fetch(
-      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-      {
-        method: "POST",
+    const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
-        },
+      headers: {
+        "Content-Type": "application/json",
+      },
 
-        body: JSON.stringify({
-          secret: process.env.TURNSTILE_SECRET_KEY,
-          response: turnstileToken,
-        }),
-      }
-    )
+      body: JSON.stringify({
+        secret: process.env.TURNSTILE_SECRET_KEY,
+        response: turnstileToken,
+      }),
+    })
 
     const verifyData = await verifyRes.json()
 

@@ -72,7 +72,11 @@ export default function ContactForm() {
               Subject
             </label>
             <Select required>
-              <SelectTrigger id="subject-select" aria-labelledby="subject-label" className="w-full border-txt px-[10px] py-[11px] text-sm bg-overlay border-1 rounded-[5px] w-[210px] placeholder:text-black/25 font-inherit">
+              <SelectTrigger
+                id="subject-select"
+                aria-labelledby="subject-label"
+                className="w-full border-txt px-[10px] py-[11px] text-sm bg-overlay border-1 rounded-[5px] w-[210px] placeholder:text-black/25 font-inherit"
+              >
                 <SelectValue placeholder="Select a subject" />
               </SelectTrigger>
               <SelectContent
@@ -90,11 +94,25 @@ export default function ContactForm() {
           </div>
           {/* Name */}
           <div className="flex flex-col gap-2">
-            <Input label="Name" name="name" placeholder="Your name" minLength={2} maxLength={100} required />
+            <Input
+              label="Name"
+              name="name"
+              placeholder="Your name"
+              minLength={2}
+              maxLength={100}
+              required
+            />
           </div>
           {/* Email */}
           <div className="flex flex-col gap-2">
-            <Input label="Email" name="email" type="email" placeholder="you@example.com" maxLength={254} required />
+            <Input
+              label="Email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              maxLength={254}
+              required
+            />
           </div>
         </div>
 
