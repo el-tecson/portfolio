@@ -29,7 +29,7 @@ export default function HeroSection() {
               Emmanuel Leu Tecson
             </h1>
             <p className="text-home-accent font-bold text-xl max-w-[25ch] sm:max-w-none sm:text-3xl leading-snug tracking-wider">
-              Full-Stack Web Developer
+              Frontend Developer
             </p>
           </div>
           <p className="text-home-txt font-normal normal-case text-base max-w-[40ch] sm:max-w-none sm:text-2xl leading-relaxed tracking-wide">
