@@ -11,9 +11,9 @@ export default function CVCard({ className, children, title, isHome, ...props }:
   return (
     <div
       className={`
-            ${isHome ? "bg-home-overlay border border-solid border-home-txt" : "bg-overlay"} rounded-lg shadow-md hover:shadow-lg transition
+            ${isHome ? "bg-home-overlay border border-solid border-home-txt" : "bg-overlay"} rounded-lg shadow-md hover:shadow-lg active:shadow-lg transition
             px-[15px] py-[30px] sm:px-[22.5px] sm:py-[45px] flex flex-col gap-4 cursor-pointer
-            hover:transform-[scale(1.01)_translateY(-2px)] duration-200
+            hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] duration-200
             ${className}
             `}
       onClick={() => router.push(`/resume`)}
@@ -32,9 +32,9 @@ export default function CVCard({ className, children, title, isHome, ...props }:
         <button
           className={`
                     flex flex-row gap-1 p-2.5 rounded-md shadow-sm
-                    ${isHome ? "bg-home-accent" : "bg-accent"} hover:opacity-90
+                    ${isHome ? "bg-home-accent" : "bg-accent"} hover:opacity-90 active:opacity-90
                     justify-center items-center cursor-pointer sm:p-3.875 sm:py-1.875
-                    hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200
+                    hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] transition duration-200
                 `}
         >
           <p

@@ -24,8 +24,8 @@ export default function SidebarListItem({
                           ? "text-home-nav-bg bg-home-txt"
                           : "text-nav-bg bg-txt"
                         : isHome
-                          ? "text-home-txt hover:text-home-nav-bg hover:bg-home-txt"
-                          : "text-txt hover:text-nav-bg hover:bg-txt"
+                          ? "text-home-txt hover:text-home-nav-bg active:text-home-nav-bg hover:bg-home-txt active:bg-home-txt"
+                          : "text-txt hover:text-nav-bg active:text-nav-bg hover:bg-txt active:bg-text"
                     }
                     border-b ${isHome ? "border-home-txt/50" : "border-txt/50"}
                     text-base font-semibold

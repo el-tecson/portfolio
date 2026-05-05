@@ -156,9 +156,9 @@ export default async function ProjectPage({ params }: ProjectRouteProps) {
           <button
             className={`
                         flex flex-row gap-1 px-6 py-3 rounded-full border
-                        border-accent hover:opacity-90
+                        border-accent hover:opacity-90 active:opacity-90
                         justify-center items-center cursor-pointer sm:px-3.75 sm:py-1.875
-                        hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200
+                        hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] transition duration-200
                     `}
           >
             <p

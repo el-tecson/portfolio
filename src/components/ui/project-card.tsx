@@ -24,10 +24,10 @@ export default function ProjectCard({ projectName, isHome }: ProjectCardProps) {
   return (
     <RouterDiv
       className={`
-            flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 shadow-md hover:shadow-lg
+            flex flex-col py-7.5 px-3.75 sm:py-11.25 sm:px-7.5 shadow-md hover:shadow-lg active:shadow-lg
             gap-5 rounded-2xl cursor-pointer sm:gap-7.5 flex-1 select-none min-w-0 w-full
             ${isHome ? "bg-home-overlay text-home-txt transition-transform border border-solid border-home-txt" : "bg-overlay transition text-txt hover:bg-overlay/90"}
-            hover:transform-[scale(1.01)_translateY(2px)] duration-200
+            hover:transform-[scale(1.01)_translateY(2px)] active:transform-[scale(1.01)_translateY(2px)] duration-200
         `}
       key={projectName}
       pushTo={`/projects/${projectName}`}

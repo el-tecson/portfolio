@@ -12,8 +12,8 @@ export default function BackButton({ className, ...props }: Omit<StandardProps, 
       onClick={() => router.back()}
       className={`
                 flex flex-row gap-1 items-center cursor-pointer
-                hover:transform-[scale(1.01)_translateY(-1px)]
-                hover:opacity-90 transition duration-200
+                hover:transform-[scale(1.01)_translateY(-1px)] active:transform-[scale(1.01)_translateY(-1px)]
+                hover:opacity-90 active:opacity-90 transition duration-200
                 ${className}
             `}
       {...props}

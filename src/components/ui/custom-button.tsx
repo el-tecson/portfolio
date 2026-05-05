@@ -19,9 +19,9 @@ export default function CustomButton({
       <button
         className={`
                 flex flex-row gap-1 p-1 rounded-sm border
-                border-txt hover:opacity-90
+                border-txt hover:opacity-90 active:opacity-90
                 justify-center items-center cursor-pointer sm:px-3.75 sm:py-1.875
-                hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200
+                hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] transition duration-200
             `}
       >
         <ButtonIcon

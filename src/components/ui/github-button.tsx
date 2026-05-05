@@ -20,9 +20,9 @@ export default function GithubButton({
       <button
         className={`
                 flex flex-row gap-5 px-2.5 py-1.25 rounded-sm border
-                ${isHome ? "border-home-txt" : "border-txt"} hover:opacity-90
+                ${isHome ? "border-home-txt" : "border-txt"} hover:opacity-90 active:opacity-90
                 justify-center items-center cursor-pointer sm:px-3.75 sm:py-1.875
-                hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200
+                hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] transition duration-200
             `}
       >
         <p

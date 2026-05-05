@@ -32,9 +32,9 @@ export default function AchievementsSection() {
             <Link href={cert.cert_link} className="self-center sm:self-end" target="_blank">
               <button
                 className="
-                                flex flex-row gap-5 p-2 sm:p-3 rounded-sm border hover:opacity-90
+                                flex flex-row gap-5 p-2 sm:p-3 rounded-sm border hover:opacity-90 active:opacity-90
                                 justify-center items-center cursor-pointer sm:px-3.75 sm:py-1.875
-                                hover:transform-[scale(1.01)_translateY(-2px)] transition duration-200 border-home-txt
+                                hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] transition duration-200 border-home-txt
                             "
               >
                 <p className="text-base font-sans tracking-wider uppercase font-medium sm:text-xl text-home-txt">

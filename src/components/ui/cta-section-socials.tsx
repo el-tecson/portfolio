@@ -21,7 +21,7 @@ export default function CTASectSocials() {
           key={index}
           href={href}
           target="_blank"
-          className="w-[48px] h-[48px] sm:w-[72px] sm:h-[72px] flex items-center justify-center hover:transform-[scale(1.01)_translateY(-2px)] hover:opacity-90 transition duration-200"
+          className="w-[48px] h-[48px] sm:w-[72px] sm:h-[72px] flex items-center justify-center hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)] hover:opacity-90 active:opacity-90 transition duration-200"
         >
           <Icon className="text-home-txt fill-home-txt" />
         </Link>

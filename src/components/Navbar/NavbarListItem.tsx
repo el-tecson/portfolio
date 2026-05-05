@@ -24,8 +24,8 @@ export default function NavbarListItem({
                           ? "text-home-accent"
                           : "text-accent"
                         : isHome
-                          ? "text-home-txt hover:text-home-accent"
-                          : "text-txt hover:text-accent"
+                          ? "text-home-txt hover:text-home-accent active:text-home-accent"
+                          : "text-txt hover:text-accent active:text-accent"
                     }
                     flex justify-center items-center
                     text-base font-normal h-full

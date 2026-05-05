@@ -23,7 +23,7 @@ export default function MobileSidebar() {
           className="
           flex items-center justify-center sm:hidden cursor-pointer
           transition-transform duration-200
-          hover:transform-[scale(1.05)]
+          hover:transform-[scale(1.05)] active:transform-[scale(1.05)]
         "
         >
           <SideBarIcon

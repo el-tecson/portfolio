@@ -72,7 +72,7 @@ function SheetContent({
               className="
               absolute top-mobile-sidebar-icon right-mobile-scr-mg-x
               transition-transform duration-200
-              hover:transform-[scale(1.05)]
+              hover:transform-[scale(1.05)] active:transform-[scale(1.05)]
             "
             >
               <XIcon

@@ -141,7 +141,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="flex flex-row items-center gap-1 rounded-full border px-4 py-2 cursor-pointer border border-accent text-accent shadow-sm transition hover:opacity-80 hover:transform-[scale(1.01)_translateY(-2px)]"
+            className="flex flex-row items-center gap-1 rounded-full border px-4 py-2 cursor-pointer border border-accent text-accent shadow-sm transition hover:opacity-80 active:opacity-80 hover:transform-[scale(1.01)_translateY(-2px)] active:transform-[scale(1.01)_translateY(-2px)]"
           >
             <p className="text-lg font-bold tracking-wider uppercase">
               {loading ? "Sending..." : "Send"}
